@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
     <entity name="Courses" representedClassName="Courses" syncable="YES" codeGenerationType="class">
         <attribute name="coursesID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="coursesName" optional="YES" attributeType="String"/>
@@ -7,10 +7,6 @@
         <attribute name="coursesStatus" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="coursesYear" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="totalScore" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="hasLecture" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lecture" inverseName="hasLectureCourses" inverseEntity="Lecture"/>
-        <relationship name="hasMaterial" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Materials" inverseName="hasCourses" inverseEntity="Materials"/>
-        <relationship name="hasQuiz" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Quiz" inverseName="hasCourses" inverseEntity="Quiz"/>
-        <relationship name="hasStudent" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Students" inverseName="hasStudentCourses" inverseEntity="Students"/>
     </entity>
     <entity name="Lecture" representedClassName="Lecture" syncable="YES" codeGenerationType="class">
         <attribute name="lectureCourseList" optional="YES" attributeType="String"/>
@@ -18,19 +14,15 @@
         <attribute name="lectureID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="lectureName" optional="YES" attributeType="String"/>
         <attribute name="lecturePassword" optional="YES" attributeType="String"/>
+        <attribute name="lecturePhone" optional="YES" attributeType="String"/>
         <attribute name="lectureStudentList" optional="YES" attributeType="String"/>
         <attribute name="lectureUniversity" optional="YES" attributeType="String"/>
-        <relationship name="hasLectureCourses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Courses" inverseName="hasLecture" inverseEntity="Courses"/>
-        <relationship name="hasQuizScore" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Quiz" inverseName="hasLecture" inverseEntity="Quiz"/>
-        <relationship name="hasStudentList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Students" inverseName="hasLectureName" inverseEntity="Students"/>
     </entity>
     <entity name="Materials" representedClassName="Materials" syncable="YES" codeGenerationType="class">
         <attribute name="materialContent" optional="YES" attributeType="String"/>
         <attribute name="materialID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="materialStages" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="materialTitle" optional="YES" attributeType="String"/>
-        <relationship name="hasCourses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Courses" inverseName="hasMaterial" inverseEntity="Courses"/>
-        <relationship name="hasQuiz" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Quiz" inverseName="hasMaterial" inverseEntity="Quiz"/>
     </entity>
     <entity name="Quiz" representedClassName="Quiz" syncable="YES" codeGenerationType="class">
         <attribute name="quizChoices" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
@@ -38,11 +30,6 @@
         <attribute name="quizQuestion" optional="YES" attributeType="String"/>
         <attribute name="quizScore" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="quizTitle" optional="YES" attributeType="String"/>
-        <relationship name="hasCourses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Courses" inverseName="hasQuiz" inverseEntity="Courses"/>
-        <relationship name="hasLecture" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lecture" inverseName="hasQuizScore" inverseEntity="Lecture"/>
-        <relationship name="hasMaterial" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Materials" inverseName="hasQuiz" inverseEntity="Materials"/>
-        <relationship name="hasStudent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Students" inverseName="hasQuiz" inverseEntity="Students"/>
-        <relationship name="hasTime" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Time" inverseName="hasQuiz" inverseEntity="Time"/>
     </entity>
     <entity name="Students" representedClassName="Students" syncable="YES" codeGenerationType="class">
         <attribute name="studentCourseList" optional="YES" attributeType="String"/>
@@ -50,23 +37,24 @@
         <attribute name="studentID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="studentName" optional="YES" attributeType="String"/>
         <attribute name="studentPassword" optional="YES" attributeType="String"/>
+        <attribute name="studentPhone" optional="YES" attributeType="String"/>
         <attribute name="studentUniversity" optional="YES" attributeType="String"/>
         <attribute name="totalProgress" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="totalScore" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="hasLectureName" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lecture" inverseName="hasStudentList" inverseEntity="Lecture"/>
-        <relationship name="hasQuiz" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Quiz" inverseName="hasStudent" inverseEntity="Quiz"/>
-        <relationship name="hasStudentCourses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Courses" inverseName="hasStudent" inverseEntity="Courses"/>
     </entity>
     <entity name="Time" representedClassName="Time" syncable="YES" codeGenerationType="class">
         <attribute name="time" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <relationship name="hasQuiz" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Quiz" inverseName="hasTime" inverseEntity="Quiz"/>
     </entity>
+    <configuration name="Cloud" usedWithCloudKit="YES">
+        <memberEntity name="Students"/>
+        <memberEntity name="Lecture"/>
+    </configuration>
     <elements>
-        <element name="Courses" positionX="-229.99609375" positionY="42.66015625" width="128" height="193"/>
-        <element name="Materials" positionX="-442.46875" positionY="216.1796875" width="128" height="133"/>
-        <element name="Lecture" positionX="-566.203125" positionY="-95.38671875" width="128" height="193"/>
-        <element name="Students" positionX="62.86328125" positionY="-93.26953125" width="128" height="208"/>
-        <element name="Quiz" positionX="-231.3515625" positionY="-189.33984375" width="128" height="193"/>
-        <element name="Time" positionX="-6.82421875" positionY="-188.3984375" width="128" height="73"/>
+        <element name="Courses" positionX="-229.99609375" positionY="42.66015625" width="128" height="133"/>
+        <element name="Lecture" positionX="-566.203125" positionY="-95.38671875" width="128" height="163"/>
+        <element name="Materials" positionX="-442.46875" positionY="216.1796875" width="128" height="103"/>
+        <element name="Quiz" positionX="-231.3515625" positionY="-189.33984375" width="128" height="118"/>
+        <element name="Students" positionX="62.86328125" positionY="-93.26953125" width="128" height="178"/>
+        <element name="Time" positionX="-6.82421875" positionY="-188.3984375" width="128" height="58"/>
     </elements>
 </model>

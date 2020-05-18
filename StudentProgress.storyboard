@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Progress-->
         <scene sceneID="OZf-Sw-LW9">
             <objects>
                 <viewController id="2gV-Zv-Nnv" customClass="TestVC" customModule="dorra" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,8 +42,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="h6I-P1-IpL"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="9Cc-HH-N8f"/>
+                    <tabBarItem key="tabBarItem" title="Progress" id="iqP-hZ-OoK"/>
                     <navigationItem key="navigationItem" id="fop-wB-PS7"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mP3-sJ-D6R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

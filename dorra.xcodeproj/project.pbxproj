@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8851185424728D2700567AB7 /* dorra.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8851185224728D2600567AB7 /* dorra.xcdatamodeld */; };
 		AECD3D8224727E8800B8616D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD3D8124727E8800B8616D /* AppDelegate.swift */; };
 		AECD3D8424727E8800B8616D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD3D8324727E8800B8616D /* SceneDelegate.swift */; };
 		AECD3D8624727E8800B8616D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD3D8524727E8800B8616D /* ViewController.swift */; };
 		AECD3D8924727E8800B8616D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECD3D8724727E8800B8616D /* Main.storyboard */; };
-		AECD3D8C24727E8800B8616D /* dorra.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AECD3D8A24727E8800B8616D /* dorra.xcdatamodeld */; };
 		AECD3D8E24727E8900B8616D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECD3D8D24727E8900B8616D /* Assets.xcassets */; };
 		AECD3D9124727E8900B8616D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECD3D8F24727E8900B8616D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8851185324728D2700567AB7 /* dorra.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dorra.xcdatamodel; sourceTree = "<group>"; };
 		AECD3D7E24727E8800B8616D /* dorra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dorra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECD3D8124727E8800B8616D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AECD3D8324727E8800B8616D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AECD3D8524727E8800B8616D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AECD3D8824727E8800B8616D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AECD3D8B24727E8800B8616D /* dorra.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dorra.xcdatamodel; sourceTree = "<group>"; };
 		AECD3D8D24727E8900B8616D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AECD3D9024727E8900B8616D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AECD3D9224727E8900B8616D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +58,7 @@
 		AECD3D8024727E8800B8616D /* dorra */ = {
 			isa = PBXGroup;
 			children = (
+				8851185224728D2600567AB7 /* dorra.xcdatamodeld */,
 				AECD3D8124727E8800B8616D /* AppDelegate.swift */,
 				AECD3D8324727E8800B8616D /* SceneDelegate.swift */,
 				AECD3D8524727E8800B8616D /* ViewController.swift */,
@@ -65,7 +66,6 @@
 				AECD3D8D24727E8900B8616D /* Assets.xcassets */,
 				AECD3D8F24727E8900B8616D /* LaunchScreen.storyboard */,
 				AECD3D9224727E8900B8616D /* Info.plist */,
-				AECD3D8A24727E8800B8616D /* dorra.xcdatamodeld */,
 			);
 			path = dorra;
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 			files = (
 				AECD3D8624727E8800B8616D /* ViewController.swift in Sources */,
 				AECD3D8224727E8800B8616D /* AppDelegate.swift in Sources */,
-				AECD3D8C24727E8800B8616D /* dorra.xcdatamodeld in Sources */,
+				8851185424728D2700567AB7 /* dorra.xcdatamodeld in Sources */,
 				AECD3D8424727E8800B8616D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,12 +342,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		AECD3D8A24727E8800B8616D /* dorra.xcdatamodeld */ = {
+		8851185224728D2600567AB7 /* dorra.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				AECD3D8B24727E8800B8616D /* dorra.xcdatamodel */,
+				8851185324728D2700567AB7 /* dorra.xcdatamodel */,
 			);
-			currentVersion = AECD3D8B24727E8800B8616D /* dorra.xcdatamodel */;
+			currentVersion = 8851185324728D2700567AB7 /* dorra.xcdatamodel */;
 			path = dorra.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

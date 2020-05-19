@@ -43,6 +43,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          error conditions that could cause the creation of the store to fail.
         */
         let container = NSPersistentCloudKitContainer(name: "dorra")
+        
+        // Create a store description for a CloudKit-backed local store
+        let cloudStoreLocation = URL(fileURLWithPath: "/Users/jacobandrean/Documents/cloud.store")
+        let cloudStoreDescription =
+            NSPersistentStoreDescription(url: cloudStoreLocation)
+        cloudStoreDescription.configuration = "Cloud"
+
+        // Set the container options on the cloud store
+        cloudStoreDescription.cloudKitContainerOptions =
+            NSPersistentCloudKitContainerOptions(
+                containerIdentifier: "iCloud.com.jacobandrean.app")
+        
+        container.persistentStoreDescriptions = [
+            cloudStoreDescription
+        ]
+        
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

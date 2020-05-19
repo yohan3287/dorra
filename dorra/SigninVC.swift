@@ -47,8 +47,9 @@ class SigninVC: UIViewController {
                     let alert = UIAlertController(title: "alert message", message: "login success", preferredStyle: .alert)
                     self.present(alert, animated: true, completion: nil)
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        alert.dismiss(animated: true, completion: nil)
-//                        self.performSegue(withIdentifier: "toStudentHome", sender: nil)
+                        alert.dismiss(animated: true) {
+                            self.performSegue(withIdentifier: "toStudentHome", sender: nil)
+                        }
                     }
                 }
             }
@@ -74,8 +75,10 @@ class SigninVC: UIViewController {
                     let alert = UIAlertController(title: "alert message", message: "login success", preferredStyle: .alert)
                     self.present(alert, animated: true, completion: nil)
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        alert.dismiss(animated: true, completion: nil)
-//                        self.performSegue(withIdentifier: "toLecturerHome", sender: nil)
+                        alert.dismiss(animated: true) {
+                            self.performSegue(withIdentifier: "toLecturerHome", sender: nil)
+                        }
+                        
                     }
                 }
             }

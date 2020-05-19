@@ -12,6 +12,9 @@
 		5AD398252472B3170030B5A1 /* StudentActivity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD398232472B3170030B5A1 /* StudentActivity.storyboard */; };
 		5AD398272472B33D0030B5A1 /* StudentHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD398262472B33D0030B5A1 /* StudentHome.storyboard */; };
 		5AD3982A2472B3580030B5A1 /* StudentProgress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD398282472B3580030B5A1 /* StudentProgress.storyboard */; };
+		881870B3247344E4009720E2 /* quizSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881870B2247344E4009720E2 /* quizSecondViewController.swift */; };
+		881870B924739BD0009720E2 /* resultVCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881870B824739BD0009720E2 /* resultVCTableViewController.swift */; };
+		881870BB24739C0B009720E2 /* resutlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881870BA24739C0B009720E2 /* resutlVC.swift */; };
 		8851185424728D2700567AB7 /* dorra.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8851185224728D2600567AB7 /* dorra.xcdatamodeld */; };
 		AECD3D8224727E8800B8616D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD3D8124727E8800B8616D /* AppDelegate.swift */; };
 		AECD3D8424727E8800B8616D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD3D8324727E8800B8616D /* SceneDelegate.swift */; };
@@ -27,6 +30,9 @@
 		5AD398242472B3170030B5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = dorra/Base.lproj/StudentActivity.storyboard; sourceTree = "<group>"; };
 		5AD398262472B33D0030B5A1 /* StudentHome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StudentHome.storyboard; sourceTree = "<group>"; };
 		5AD398292472B3580030B5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = dorra/Base.lproj/StudentProgress.storyboard; sourceTree = "<group>"; };
+		881870B2247344E4009720E2 /* quizSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizSecondViewController.swift; sourceTree = "<group>"; };
+		881870B824739BD0009720E2 /* resultVCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultVCTableViewController.swift; sourceTree = "<group>"; };
+		881870BA24739C0B009720E2 /* resutlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resutlVC.swift; sourceTree = "<group>"; };
 		8851185324728D2700567AB7 /* dorra.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dorra.xcdatamodel; sourceTree = "<group>"; };
 		AECD3D7E24727E8800B8616D /* dorra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dorra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECD3D8124727E8800B8616D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,8 +58,11 @@
 		AECD3D7524727E8800B8616D = {
 			isa = PBXGroup;
 			children = (
+				881870B824739BD0009720E2 /* resultVCTableViewController.swift */,
+				881870BA24739C0B009720E2 /* resutlVC.swift */,
 				5AD398282472B3580030B5A1 /* StudentProgress.storyboard */,
 				5AD398262472B33D0030B5A1 /* StudentHome.storyboard */,
+				881870B2247344E4009720E2 /* quizSecondViewController.swift */,
 				5AD398232472B3170030B5A1 /* StudentActivity.storyboard */,
 				5A5A98A624729BD600CFBC63 /* NavControllerLecturer.storyboard */,
 				5A5A98A424729BA600CFBC63 /* Signup.storyboard */,
@@ -162,9 +171,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AECD3D8624727E8800B8616D /* ViewController.swift in Sources */,
+				881870BB24739C0B009720E2 /* resutlVC.swift in Sources */,
+				881870B3247344E4009720E2 /* quizSecondViewController.swift in Sources */,
 				AECD3D8224727E8800B8616D /* AppDelegate.swift in Sources */,
 				8851185424728D2700567AB7 /* dorra.xcdatamodeld in Sources */,
 				AECD3D8424727E8800B8616D /* SceneDelegate.swift in Sources */,
+				881870B924739BD0009720E2 /* resultVCTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

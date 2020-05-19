@@ -123,7 +123,7 @@
                         <outlet property="segmentedControlOutlet" destination="Nra-Ca-eW8" id="NOH-Fi-SUi"/>
                         <segue destination="0rb-OS-NdZ" kind="presentation" identifier="toSignup" id="Kiq-Nn-1qW"/>
                         <segue destination="cfD-p2-GAo" kind="show" id="Diq-ae-Sss"/>
-                        <segue destination="5YJ-HE-nxE" kind="show" identifier="toStudentHome" id="3hs-sF-m0X"/>
+                        <segue destination="5YJ-HE-nxE" kind="show" identifier="" id="3hs-sF-m0X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

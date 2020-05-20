@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCellID" id="gTV-IL-0wX" customClass="MyCell" customModule="dorra" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKM-At-am1">
+                        <rect key="frame" x="2" y="2" width="36" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSm-uc-5O5">
+                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qSm-uc-5O5" secondAttribute="bottom" id="7Si-Ob-XHL"/>
+                            <constraint firstItem="qSm-uc-5O5" firstAttribute="leading" secondItem="tKM-At-am1" secondAttribute="leading" id="KlJ-Bf-nuF"/>
+                            <constraint firstAttribute="trailing" secondItem="qSm-uc-5O5" secondAttribute="trailing" id="kQV-9B-07a"/>
+                            <constraint firstItem="qSm-uc-5O5" firstAttribute="top" secondItem="tKM-At-am1" secondAttribute="top" id="pP1-vI-cjH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tKM-At-am1" secondAttribute="trailing" constant="2" id="Drq-mX-EGw"/>
+                <constraint firstItem="tKM-At-am1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="OCB-45-TDc"/>
+                <constraint firstItem="tKM-At-am1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="P1l-TD-4Ic"/>
+                <constraint firstAttribute="bottom" secondItem="tKM-At-am1" secondAttribute="bottom" constant="2" id="rbF-3N-ZnN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="bgView" destination="tKM-At-am1" id="Tej-AD-7xz"/>
+                <outlet property="numberLabel" destination="qSm-uc-5O5" id="QME-h3-Z7U"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="139"/>
+        </collectionViewCell>
+    </objects>
+</document>

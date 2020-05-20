@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Numbers</key>
+	<dict>
+		<key>1</key>
+		<string></string>
+		<key>2</key>
+		<string></string>
+		<key>3</key>
+		<string></string>
+		<key>4</key>
+		<string></string>
+		<key>5</key>
+		<string></string>
+		<key>6</key>
+		<string></string>
+		<key>7</key>
+		<string></string>
+		<key>8</key>
+		<string></string>
+		<key>9</key>
+		<string></string>
+		<key>10</key>
+		<string></string>
+	</dict>
+	<key>Question</key>
+	<dict>
+		<key>2x + 6 = 10
+What is the value of x?</key>
+		<string>5</string>
+		<key>If 102y = 25, then 10-y equals:</key>
+		<string> 1/5</string>
+		<key>A man has $ 10,000 to invest. He invests $ 4000 at 5 % and $ 3500 at 4 %. In order to have a yearly income of $ 500, he must invest the remainder at:</key>
+		<string>6.4 %</string>
+		<key>If (0.2)x = 2 and log 2 = 0.3010, then the value of x to the nearest tenth is:</key>
+		<string>-0.4</string>
+		<key>The sum of three numbers is 98. The ratio of the first to the second is 2/3, and the ratio of the second to the third is 5/8. The second number is:</key>
+		<string>30</string>
+	</dict>
+	<key>Option</key>
+	<dict>
+		<key>A</key>
+		<string></string>
+		<key>B</key>
+		<string></string>
+		<key>C</key>
+		<string></string>
+		<key>D</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>

@@ -63,10 +63,10 @@
     </entity>
     <elements>
         <element name="Courses" positionX="-229.99609375" positionY="42.66015625" width="128" height="193"/>
-        <element name="Materials" positionX="-442.46875" positionY="216.1796875" width="128" height="133"/>
         <element name="Lecture" positionX="-566.203125" positionY="-95.38671875" width="128" height="193"/>
-        <element name="Students" positionX="62.86328125" positionY="-93.26953125" width="128" height="208"/>
+        <element name="Materials" positionX="-442.46875" positionY="216.1796875" width="128" height="133"/>
         <element name="Quiz" positionX="-231.3515625" positionY="-189.33984375" width="128" height="193"/>
+        <element name="Students" positionX="62.86328125" positionY="-93.26953125" width="128" height="208"/>
         <element name="Time" positionX="-6.82421875" positionY="-188.3984375" width="128" height="73"/>
     </elements>
 </model>

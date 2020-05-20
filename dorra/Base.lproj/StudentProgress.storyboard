@@ -28,10 +28,38 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Progress" id="ft6-FX-6Bj"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="Lg3-NH-ogY" kind="show" identifier="toProgressDetail" id="9cX-Gw-81U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3UN-kc-qeW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="181" y="936"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TLD-R6-5UU">
+            <objects>
+                <viewController id="Lg3-NH-ogY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8t5-6V-xrN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="progress detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVB-dG-fZn">
+                                <rect key="frame" x="177" y="385" width="114" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="AwL-9q-SB3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nHW-hi-k0S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rx3-CD-7sq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="935"/>
         </scene>
     </scenes>
 </document>

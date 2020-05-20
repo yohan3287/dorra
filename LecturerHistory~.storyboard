@@ -29,7 +29,7 @@
                     <navigationItem key="navigationItem" id="y4a-1c-0pC"/>
                     <connections>
                         <segue destination="ZRK-VH-zvn" kind="show" identifier="toProfile" id="yML-tq-Gqr"/>
-                        <segue destination="mp3-u2-Nbu" kind="show" identifier="toHistory" id="12f-8x-Xir"/>
+                        <segue destination="xtN-3t-zPe" kind="show" identifier="toHistory" id="12f-8x-Xir"/>
                         <segue destination="iup-7G-07e" kind="show" identifier="toAddClass" id="jeg-66-13o"/>
                         <segue destination="qyn-9X-UfV" kind="show" identifier="toAllClasses" id="L18-iC-La1"/>
                         <segue destination="6nk-NC-tzY" kind="show" identifier="toDetailClass" id="kCW-OY-p7v"/>
@@ -38,6 +38,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p2I-bM-nLb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2311.594202898551" y="129.91071428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iBq-Al-DMH">
+            <objects>
+                <viewController id="xtN-3t-zPe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ppt-uY-uor">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zve-YA-N3t">
+                                <rect key="frame" x="186" y="377" width="53" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="doc-6J-reY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wXh-2Y-x5M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZQ-gP-2s1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3242.0289855072465" y="129.91071428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VbN-ty-Bc9">
@@ -196,16 +221,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h38-Jw-6S1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3240.579710144928" y="-597.32142857142856"/>
-        </scene>
-        <!--LecturerHistory-->
-        <scene sceneID="L9X-K0-bE3">
-            <objects>
-                <viewControllerPlaceholder storyboardName="LecturerHistory" id="mp3-u2-Nbu" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="v7o-RI-uu8"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="06l-BI-b0w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3242.0289855072465" y="129.91071428571428"/>
         </scene>
     </scenes>
 </document>

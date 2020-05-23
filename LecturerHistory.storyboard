@@ -93,23 +93,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZu-3O-rMt">
-                                <rect key="frame" x="54" y="182" width="306" height="35"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hmX-7e-Euo">
+                                <rect key="frame" x="61" y="179" width="292" height="38.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.47014087440000002" green="0.64521235229999996" blue="0.96082133049999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="selectSemester:" destination="xtN-3t-zPe" eventType="touchUpInside" id="MCO-9c-ncq"/>
+                                    <action selector="termTextFieldEditingDidEnd:" destination="xtN-3t-zPe" eventType="editingDidEnd" id="rH9-sB-Exh"/>
                                 </connections>
-                            </button>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.84840840100000003" green="0.89975422620000001" blue="0.98824828860000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -120,6 +113,7 @@
                     <navigationItem key="navigationItem" id="wXh-2Y-x5M"/>
                     <connections>
                         <outlet property="historyCV" destination="5HK-aT-VAO" id="QXk-MV-Oor"/>
+                        <outlet property="termTextField" destination="hmX-7e-Euo" id="omH-zm-3XV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZQ-gP-2s1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

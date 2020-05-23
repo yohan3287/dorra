@@ -16,7 +16,7 @@ class LecturerHistoryVC: UIViewController, UICollectionViewDelegate, UICollectio
     var termList: [String] = ["sem 1", "sem 2", "sem 3"]
     var courseName: [String] = ["Data Structure", "Database System", "Object Oriented", "Computer Network"]
     var totalClass: [Int] = [22, 16, 8, 10]
-    var cellColor: [UIColor] = [#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1), #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)]
+    var cellColor: [UIColor] = [#colorLiteral(red: 0.991355598, green: 0.898868978, blue: 0.8959916234, alpha: 1), #colorLiteral(red: 0.9064885378, green: 0.9852054715, blue: 0.8641509414, alpha: 1), #colorLiteral(red: 0.8915610909, green: 0.9915348887, blue: 0.9809533954, alpha: 1)]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return courseName.count
@@ -26,8 +26,13 @@ class LecturerHistoryVC: UIViewController, UICollectionViewDelegate, UICollectio
         let cell = historyCV.dequeueReusableCell(withReuseIdentifier: "historyCell", for: indexPath) as! HistoryCollectionViewCell
         
         cell.courseNameLabel.text = courseName[indexPath.row]
-        cell.totalClassLabel.text = String(totalClass[indexPath.row])
-        cell.backgroundColor = cellColor[1]
+        if totalClass[indexPath.row] <= 1 {
+            cell.totalClassLabel.text = "\(totalClass[indexPath.row]) class"
+        } else {
+            cell.totalClassLabel.text = "\(totalClass[indexPath.row]) classes"
+        }
+        
+        cell.backgroundColor = cellColor[indexPath.row % cellColor.count]
         
         return cell
     }
@@ -43,6 +48,7 @@ class LecturerHistoryVC: UIViewController, UICollectionViewDelegate, UICollectio
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return termList[row]
     }
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         termTextField.text = termList[row]
     }

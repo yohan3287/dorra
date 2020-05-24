@@ -21,6 +21,9 @@
                                 <state key="normal" title="Sign Out">
                                     <color key="titleColor" red="0.8048867583" green="0.2173303962" blue="0.18034499879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="signOutButton:" destination="9y3-9n-Yr4" eventType="touchUpInside" id="8k4-fY-Bz1"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIx-uB-djr">
                                 <rect key="frame" x="20" y="369" width="45" height="21"/>
@@ -95,6 +98,9 @@
                                 <rect key="frame" x="347" y="79" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="9y3-9n-Yr4" eventType="touchUpInside" id="1oY-np-6A5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

@@ -23,7 +23,12 @@ class LecturerProfileVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func saveButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func signOutButton(_ sender: UIButton) {
+    }
+    
     /*
     // MARK: - Navigation
 

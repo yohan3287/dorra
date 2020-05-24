@@ -35,6 +35,7 @@
 		AE1AF85C2475192C0092AA5B /* LecturerProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1AF85A2475192C0092AA5B /* LecturerProfile.storyboard */; };
 		AE1AF85E2475194A0092AA5B /* LecturerHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1AF85D2475194A0092AA5B /* LecturerHistory.storyboard */; };
 		AE1AF860247524E40092AA5B /* LecturerHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1AF85F247524E40092AA5B /* LecturerHistoryVC.swift */; };
+		AE2F3A1B247A6335004438C2 /* LecturerProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F3A1A247A6335004438C2 /* LecturerProfileVC.swift */; };
 		AE5651C72477C7E700CEB65D /* HistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5651C62477C7E700CEB65D /* HistoryCollectionViewCell.swift */; };
 		AECD3D8224727E8800B8616D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD3D8124727E8800B8616D /* AppDelegate.swift */; };
 		AECD3D8424727E8800B8616D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD3D8324727E8800B8616D /* SceneDelegate.swift */; };
@@ -74,6 +75,7 @@
 		AE1AF85B2475192C0092AA5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = dorra/Base.lproj/LecturerProfile.storyboard; sourceTree = "<group>"; };
 		AE1AF85D2475194A0092AA5B /* LecturerHistory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LecturerHistory.storyboard; sourceTree = "<group>"; };
 		AE1AF85F247524E40092AA5B /* LecturerHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturerHistoryVC.swift; sourceTree = "<group>"; };
+		AE2F3A1A247A6335004438C2 /* LecturerProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturerProfileVC.swift; sourceTree = "<group>"; };
 		AE5651C62477C7E700CEB65D /* HistoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		AECD3D7E24727E8800B8616D /* dorra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dorra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECD3D8124727E8800B8616D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		AECD3D8024727E8800B8616D /* dorra */ = {
 			isa = PBXGroup;
 			children = (
+				AE2F3A1A247A6335004438C2 /* LecturerProfileVC.swift */,
 				AE5651C62477C7E700CEB65D /* HistoryCollectionViewCell.swift */,
 				5AFCEEF924730B420038518C /* dorra.entitlements */,
 				8851185224728D2600567AB7 /* dorra.xcdatamodeld */,
@@ -257,6 +260,7 @@
 				881870B3247344E4009720E2 /* quizSecondViewController.swift in Sources */,
 				AE1AF860247524E40092AA5B /* LecturerHistoryVC.swift in Sources */,
 				880AEFA624743E1900BBA872 /* ResultCell.swift in Sources */,
+				AE2F3A1B247A6335004438C2 /* LecturerProfileVC.swift in Sources */,
 				880AEFB02474790A00BBA872 /* questionListVC.swift in Sources */,
 				AECD3D8624727E8800B8616D /* SigninVC.swift in Sources */,
 				5AFCEEF62473022B0038518C /* SignupVC.swift in Sources */,

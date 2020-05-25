@@ -27,34 +27,6 @@ class resultVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-//
-    
-    
-    
-    
-    
-    
-//    private var NumbersArray: NSArray!
-//    private var QuestionsArray: NSArray!
-//    private var OptionArray: NSArray!
-//
-//    let dicRoot = NSDictionary.init(contentsOfFile: Bundle.main.path(forResource: "Quises", ofType: "plist")!)
-//
-//    let NumbersArrayfromDic: NSArray = NSArray.init(object: dicRoot!.object(forKey: "Numbers")as Any)
-//    NumbersArray = NumbersArrayFromDic.object(at: 0) as! NSArray
-//
-//    let QuestionArrayfromDic: NSArray = NSArray.init(object: dicRoot!.object(forKey: "Questions")as Any)
-//    QuestionArrayFromDic = QuestionArrayFromDic.object(at: 0) as! NSArray
-//
-//    let OptionArrayfromDic: NSArray = NSArray.init(object: dicRoot!.object(forKey: "Option")as Any)
-//       OptionArrayFromDic = OptionArrayFromDic.object(at: 0) as! NSArray
-//
-//    for count in 0..< NumbersArray.count {
-//        print(NumbersArray[count])
-//        print(QuestionsArray[count])
-//        print(OptionArray[count])
-//
-//    }
 
     
     
@@ -74,7 +46,6 @@ class resultVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "resultCellID", for: indexPath) as? ResultCell
         cell?.resultObject = result[indexPath.row]
-//        let hasil = (result.[IndexPath.row])
         return cell!
     }
 

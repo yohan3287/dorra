@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let container = NSPersistentCloudKitContainer(name: "dorra")
         
         // Create a store description for a CloudKit-backed local store
-        let cloudStoreLocation = URL(fileURLWithPath: "/Users/wilson/Documents/cloud.store")
+        let cloudStoreLocation = URL(fileURLWithPath: "/Users/jacobandrean/Documents/cloud.store")
         let cloudStoreDescription =
             NSPersistentStoreDescription(url: cloudStoreLocation)
         cloudStoreDescription.configuration = "Cloud"

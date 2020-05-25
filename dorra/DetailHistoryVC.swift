@@ -37,6 +37,8 @@ class DetailHistoryVC: UIViewController, UICollectionViewDelegate, UICollectionV
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.detailHistoryCV.dataSource = self
+        self.detailHistoryCV.delegate = self
     }
     
 

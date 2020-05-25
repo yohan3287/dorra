@@ -17,35 +17,37 @@ class LectureAddClass: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if pickerView.tag == 1 {
-            return periodList.count
-        } else if pickerView.tag == 2{
-            return repeatList.count
-        } else{
-            return remindList.count
-        }
+//        if pickerView.tag == 1 {
+//            return periodList.count
+//        } else if pickerView.tag == 2{
+//            return repeatList.count
+//        } else{
+//            return remindList.count
+//        }
+        return periodList.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if pickerView.tag == 1 {
-            return "\(periodList[row])"
-        } else if pickerView.tag == 2{
-            return "\(repeatList[row])"
-        } else{
-            return "\(remindList[row])"
-        }
+//        if pickerView.tag == 1 {
+//            return "\(periodList[row])"
+//        } else if pickerView.tag == 2{
+//            return "\(repeatList[row])"
+//        } else{
+//            return "\(remindList[row])"
+//        }
+        return periodList[row]
     }
     
-//    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
 //
-//        selectPeriod = periodList[row]
+        selectPeriod = periodList[row]
 //        selectRepeat = repeatList[row]
 //        selectRemind = remindList[row]
 //
-//        periodTextField.text = selectPeriod
+        periodTextField.text = selectPeriod
 //        repeatTextField.text = selectRepeat
 //        remindTextField.text = selectRemind
-//    }
+    }
     
     
     @IBOutlet weak var periodTextField: UITextField!
@@ -99,28 +101,29 @@ class LectureAddClass: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         view.endEditing(true)
     }
 //
-//    func createPickerView() {
-//           let pickerView = UIPickerView()
-//           pickerView.delegate = self
-//           periodTextField.inputView = pickerView
-//            repeatTextField.inputView = pickerView
-//            remindTextField.inputView = pickerView
-//    }
+    func createPickerView() {
+           let pickerView = UIPickerView()
+           pickerView.delegate = self
+           periodTextField.inputView = pickerView
+           // repeatTextField.inputView = pickerView
+         //   remindTextField.inputView = pickerView
+    }
     
-//    func dismissPickerView() {
-//       let toolBar = UIToolbar()
-//        toolBar.sizeToFit()
-//        let button = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.action))
-//       toolBar.setItems([button], animated: true)
-//       toolBar.isUserInteractionEnabled = true
-//       periodTextField.inputAccessoryView = toolBar
-//        repeatTextField.inputAccessoryView = toolBar
-//        remindTextField.inputAccessoryView = toolBar
-//    }
-//
-//    @objc func action() {
-//            view.endEditing(true)
-//      }
+    func dismissPickerView() {
+       let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        let button = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.action))
+       toolBar.setItems([button], animated: true)
+       toolBar.isUserInteractionEnabled = true
+       periodTextField.inputAccessoryView = toolBar
+     //   repeatTextField.inputAccessoryView = toolBar
+     
+    //remindTextField.inputAccessoryView = toolBar
+    }
+
+    @objc func action() {
+            view.endEditing(true)
+      }
     
     
     // UNFINISHED !!
@@ -130,12 +133,12 @@ class LectureAddClass: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         self.periodPicker.delegate = self
-        self.repeatPicker.delegate = self
-        self.remindPicker.delegate = self
+      //  self.repeatPicker.delegate = self
+      //  self.remindPicker.delegate = self
         
-      //  createPickerView()
+        createPickerView()
         createDatePickerView()
-      //  dismissPickerView()
+        dismissPickerView()
      // dismissDatePickerView()
 
 }

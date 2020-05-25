@@ -17,8 +17,7 @@ class MTRViewController: UIViewController {
     }
     
     @IBAction func mtrBut(_ sender: Any) {
-        
-        performSegue(withIdentifier: "toMaterial", sender: nil)
+
         
     }
     

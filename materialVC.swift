@@ -8,14 +8,13 @@
 
 import UIKit
 
-class materialVC: UITableViewController {
+class materialVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
-    
 
     
     let materials = [
-        material(link1: "https://www.freecodecamp.org/news/a-gentler-introduction-to-programming-1f57383a1b2c/",
-                 link2: "https://hackr.io/tutorials/learn-intro-to-programming",
+        material(link1: "https://www.freecodecamp.org/",
+                 link2: "https://hackr.io/",
                  vidcon: "https://da-id.zoom.us/j/98941216445"),
         
     ]
@@ -27,25 +26,59 @@ class materialVC: UITableViewController {
     }
     
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
             // #warning Incomplete implementation, return the number of sections
             return 1
         }
 
-        override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return materials.count
             
         }
 
+    
+//    func getIdentifier3(forSection section:Int) -> String {
+//           switch section {
+//           case 0:
+//               return "guidingResources"
+//           case 1:
+//               return "videoConferences"
+//           default:
+//               return "videoConferences"
+//           }
+//       }
+//
       
-        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "materialCellID", for: indexPath) as? materialCell
-            cell?.materialObj = materials[indexPath.row]
-    //        let hasil = (result.[IndexPath.row])
-            return cell!
-        }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //        switch indexPath.section {
+        //        case 0:
+        let cell = tableView.dequeueReusableCell(withIdentifier: "materialCellID", for: indexPath) as? materialCell
+        
+        //             let cell = tableView.dequeueReusableCell(withIdentifier: getIdentifier3(forSection: indexPath.section), for: indexPath) as? materialCell {
+        cell?.materialObj = materials[indexPath.row]
+        return cell!
+        
+        //            }else{
+        //                return UITableViewCell()}
+        //        case 1:
+        //            if let cell = tableView.dequeueReusableCell(withIdentifier: getIdentifier3(forSection: indexPath.section), for: indexPath) as? materialCell {
+        //                cell.materialObj = materials[indexPath.row]
+        //                return cell
+        //            } else {
+        //                return UITableViewCell()}
+        //
+        //        default:
+        //            return UITableViewCell()
+        
+    }
+}
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "materialCellID", for: indexPath) as? materialCell
+//            cell?.materialObj = materials[indexPath.row]
+//            //        let hasil = (result.[IndexPath.row])
+//            return cell!
 
-       
-         override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+
+func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 }
-}
+

@@ -7,11 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A009936247AEBA5008F4993 /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A009935247AEBA5008F4993 /* CloudKitHelper.swift */; };
+		5A03DC48247BC23D00B99819 /* StudentMaterialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A03DC47247BC23D00B99819 /* StudentMaterialVC.swift */; };
+		5A03DC4A247BC7BC00B99819 /* MaterialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A03DC49247BC7BC00B99819 /* MaterialCell.swift */; };
+		5A4D9AAC24782AB1000B3522 /* AllClassTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88399824752E4B00DFD6AD /* AllClassTVCell.swift */; };
 		5A50DA74247315720010C842 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50DA73247315720010C842 /* Variables.swift */; };
 		5A50DA7624731E7C0010C842 /* Lecture+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50DA7524731E7C0010C842 /* Lecture+Extension.swift */; };
 		5A50DA78247328810010C842 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50DA77247328810010C842 /* CustomTextField.swift */; };
 		5A5A98A524729BA600CFBC63 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5A98A424729BA600CFBC63 /* Signup.storyboard */; };
 		5A5A98A824729BD600CFBC63 /* NavControllerLecturer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5A98A624729BD600CFBC63 /* NavControllerLecturer.storyboard */; };
+		5A7C3311247594120040AEF1 /* MapJourneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C3310247594120040AEF1 /* MapJourneyVC.swift */; };
+		5A883991247524F200DFD6AD /* StudentHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A883990247524F200DFD6AD /* StudentHomeVC.swift */; };
+		5A88399324752CB300DFD6AD /* TodayTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88399224752CB300DFD6AD /* TodayTVCell.swift */; };
+		5A88399524752CCF00DFD6AD /* TomorrowTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88399424752CCF00DFD6AD /* TomorrowTVCell.swift */; };
+		5A88399724752CF600DFD6AD /* AllClassCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A88399624752CF600DFD6AD /* AllClassCVCell.swift */; };
 		5AD398252472B3170030B5A1 /* StudentActivity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD398232472B3170030B5A1 /* StudentActivity.storyboard */; };
 		5AD398272472B33D0030B5A1 /* StudentHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD398262472B33D0030B5A1 /* StudentHome.storyboard */; };
 		5AD3982A2472B3580030B5A1 /* StudentProgress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD398282472B3580030B5A1 /* StudentProgress.storyboard */; };
@@ -31,7 +40,6 @@
 		881870B3247344E4009720E2 /* quizSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881870B2247344E4009720E2 /* quizSecondViewController.swift */; };
 		8851185424728D2700567AB7 /* dorra.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8851185224728D2600567AB7 /* dorra.xcdatamodeld */; };
 		AE1AF857247514060092AA5B /* StudentQuiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1AF856247514060092AA5B /* StudentQuiz.storyboard */; };
-		AE1AF8592475142F0092AA5B /* StudentMaterial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1AF8582475142F0092AA5B /* StudentMaterial.storyboard */; };
 		AE1AF85C2475192C0092AA5B /* LecturerProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1AF85A2475192C0092AA5B /* LecturerProfile.storyboard */; };
 		AE1AF85E2475194A0092AA5B /* LecturerHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1AF85D2475194A0092AA5B /* LecturerHistory.storyboard */; };
 		AECD3D8224727E8800B8616D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD3D8124727E8800B8616D /* AppDelegate.swift */; };
@@ -43,11 +51,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A009935247AEBA5008F4993 /* CloudKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
+		5A03DC47247BC23D00B99819 /* StudentMaterialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMaterialVC.swift; sourceTree = "<group>"; };
+		5A03DC49247BC7BC00B99819 /* MaterialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCell.swift; sourceTree = "<group>"; };
 		5A50DA73247315720010C842 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		5A50DA7524731E7C0010C842 /* Lecture+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lecture+Extension.swift"; sourceTree = "<group>"; };
 		5A50DA77247328810010C842 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		5A5A98A424729BA600CFBC63 /* Signup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		5A5A98A724729BD600CFBC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = dorra/Base.lproj/NavControllerLecturer.storyboard; sourceTree = "<group>"; };
+		5A7C3310247594120040AEF1 /* MapJourneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapJourneyVC.swift; sourceTree = "<group>"; };
+		5A883990247524F200DFD6AD /* StudentHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHomeVC.swift; sourceTree = "<group>"; };
+		5A88399224752CB300DFD6AD /* TodayTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTVCell.swift; sourceTree = "<group>"; };
+		5A88399424752CCF00DFD6AD /* TomorrowTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowTVCell.swift; sourceTree = "<group>"; };
+		5A88399624752CF600DFD6AD /* AllClassCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllClassCVCell.swift; sourceTree = "<group>"; };
+		5A88399824752E4B00DFD6AD /* AllClassTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllClassTVCell.swift; sourceTree = "<group>"; };
 		5AD398242472B3170030B5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = dorra/Base.lproj/StudentActivity.storyboard; sourceTree = "<group>"; };
 		5AD398262472B33D0030B5A1 /* StudentHome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StudentHome.storyboard; sourceTree = "<group>"; };
 		5AD398292472B3580030B5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = dorra/Base.lproj/StudentProgress.storyboard; sourceTree = "<group>"; };
@@ -68,7 +85,6 @@
 		881870B2247344E4009720E2 /* quizSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizSecondViewController.swift; sourceTree = "<group>"; };
 		8851185324728D2700567AB7 /* dorra.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dorra.xcdatamodel; sourceTree = "<group>"; };
 		AE1AF856247514060092AA5B /* StudentQuiz.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StudentQuiz.storyboard; sourceTree = "<group>"; };
-		AE1AF8582475142F0092AA5B /* StudentMaterial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StudentMaterial.storyboard; sourceTree = "<group>"; };
 		AE1AF85B2475192C0092AA5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = dorra/Base.lproj/LecturerProfile.storyboard; sourceTree = "<group>"; };
 		AE1AF85D2475194A0092AA5B /* LecturerHistory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LecturerHistory.storyboard; sourceTree = "<group>"; };
 		AECD3D7E24727E8800B8616D /* dorra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dorra.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +109,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A03DC46247BC1F100B99819 /* StudentMaterial */ = {
+			isa = PBXGroup;
+			children = (
+				5A03DC47247BC23D00B99819 /* StudentMaterialVC.swift */,
+				5A03DC49247BC7BC00B99819 /* MaterialCell.swift */,
+			);
+			path = StudentMaterial;
+			sourceTree = "<group>";
+		};
+		5A88398F24751E7A00DFD6AD /* StudentHome */ = {
+			isa = PBXGroup;
+			children = (
+				5AD398262472B33D0030B5A1 /* StudentHome.storyboard */,
+				5A883990247524F200DFD6AD /* StudentHomeVC.swift */,
+				5A88399224752CB300DFD6AD /* TodayTVCell.swift */,
+				5A88399424752CCF00DFD6AD /* TomorrowTVCell.swift */,
+				5A88399824752E4B00DFD6AD /* AllClassTVCell.swift */,
+				5A88399624752CF600DFD6AD /* AllClassCVCell.swift */,
+				5A7C3310247594120040AEF1 /* MapJourneyVC.swift */,
+				5A009935247AEBA5008F4993 /* CloudKitHelper.swift */,
+			);
+			path = StudentHome;
+			sourceTree = "<group>";
+		};
 		5AFCEEFA24730B470038518C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +144,8 @@
 		AECD3D7524727E8800B8616D = {
 			isa = PBXGroup;
 			children = (
+				5A03DC46247BC1F100B99819 /* StudentMaterial */,
+				5A88398F24751E7A00DFD6AD /* StudentHome */,
 				AE1AF85D2475194A0092AA5B /* LecturerHistory.storyboard */,
 				AE1AF85A2475192C0092AA5B /* LecturerProfile.storyboard */,
 				880AEFAB2474433D00BBA872 /* Quises.plist */,
@@ -117,8 +159,6 @@
 				881870B2247344E4009720E2 /* quizSecondViewController.swift */,
 				880AEF9F2473ED0C00BBA872 /* Dummy.swift */,
 				5AD398282472B3580030B5A1 /* StudentProgress.storyboard */,
-				5AD398262472B33D0030B5A1 /* StudentHome.storyboard */,
-				AE1AF8582475142F0092AA5B /* StudentMaterial.storyboard */,
 				AE1AF856247514060092AA5B /* StudentQuiz.storyboard */,
 				5AD398232472B3170030B5A1 /* StudentActivity.storyboard */,
 				5A5A98A624729BD600CFBC63 /* NavControllerLecturer.storyboard */,
@@ -140,6 +180,7 @@
 		AECD3D8024727E8800B8616D /* dorra */ = {
 			isa = PBXGroup;
 			children = (
+				5A50DA73247315720010C842 /* Variables.swift */,
 				5AFCEEF924730B420038518C /* dorra.entitlements */,
 				8851185224728D2600567AB7 /* dorra.xcdatamodeld */,
 				5A50DA7524731E7C0010C842 /* Lecture+Extension.swift */,
@@ -151,7 +192,6 @@
 				AECD3D8524727E8800B8616D /* SigninVC.swift */,
 				5AFCEEF52473022B0038518C /* SignupVC.swift */,
 				5AFCEEFF24730E220038518C /* UIViewController+Extension.swift */,
-				5A50DA73247315720010C842 /* Variables.swift */,
 				AECD3D8D24727E8900B8616D /* Assets.xcassets */,
 				AECD3D8F24727E8900B8616D /* LaunchScreen.storyboard */,
 				AECD3D9224727E8900B8616D /* Info.plist */,
@@ -224,7 +264,6 @@
 				AECD3D8E24727E8900B8616D /* Assets.xcassets in Resources */,
 				5AD398252472B3170030B5A1 /* StudentActivity.storyboard in Resources */,
 				5A5A98A524729BA600CFBC63 /* Signup.storyboard in Resources */,
-				AE1AF8592475142F0092AA5B /* StudentMaterial.storyboard in Resources */,
 				5AD3982A2472B3580030B5A1 /* StudentProgress.storyboard in Resources */,
 				5AD398272472B33D0030B5A1 /* StudentHome.storyboard in Resources */,
 				880AEFAA24743FC600BBA872 /* MyCell.xib in Resources */,
@@ -241,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A88399524752CCF00DFD6AD /* TomorrowTVCell.swift in Sources */,
 				880AEFA2247413D500BBA872 /* resultTableViewController.swift in Sources */,
+				5A009936247AEBA5008F4993 /* CloudKitHelper.swift in Sources */,
 				880AEFAE2474780100BBA872 /* questionTableViewController.swift in Sources */,
 				880AEFA924743FC600BBA872 /* MyCell.swift in Sources */,
 				880AEFA4247415DD00BBA872 /* resultVC.swift in Sources */,
@@ -251,7 +292,9 @@
 				880AEFA624743E1900BBA872 /* ResultCell.swift in Sources */,
 				880AEFB02474790A00BBA872 /* questionListVC.swift in Sources */,
 				AECD3D8624727E8800B8616D /* SigninVC.swift in Sources */,
+				5A03DC4A247BC7BC00B99819 /* MaterialCell.swift in Sources */,
 				5AFCEEF62473022B0038518C /* SignupVC.swift in Sources */,
+				5A4D9AAC24782AB1000B3522 /* AllClassTVCell.swift in Sources */,
 				AECD3D8224727E8800B8616D /* AppDelegate.swift in Sources */,
 				5A50DA7624731E7C0010C842 /* Lecture+Extension.swift in Sources */,
 				5A50DA78247328810010C842 /* CustomTextField.swift in Sources */,
@@ -259,7 +302,12 @@
 				5AFCEEF8247309CC0038518C /* Students+Extension.swift in Sources */,
 				5AFCEF0024730E220038518C /* UIViewController+Extension.swift in Sources */,
 				8851185424728D2700567AB7 /* dorra.xcdatamodeld in Sources */,
+				5A7C3311247594120040AEF1 /* MapJourneyVC.swift in Sources */,
+				5A88399324752CB300DFD6AD /* TodayTVCell.swift in Sources */,
 				AECD3D8424727E8800B8616D /* SceneDelegate.swift in Sources */,
+				5A03DC48247BC23D00B99819 /* StudentMaterialVC.swift in Sources */,
+				5A88399724752CF600DFD6AD /* AllClassCVCell.swift in Sources */,
+				5A883991247524F200DFD6AD /* StudentHomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,6 +31,7 @@
 		881870B3247344E4009720E2 /* quizSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881870B2247344E4009720E2 /* quizSecondViewController.swift */; };
 		8851185424728D2700567AB7 /* dorra.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8851185224728D2600567AB7 /* dorra.xcdatamodeld */; };
 		AE0247DD247BB2A600DB419A /* DetailHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0247DC247BB2A600DB419A /* DetailHistoryVC.swift */; };
+		AE0247DF247BC49A00DB419A /* DetailHistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0247DE247BC49A00DB419A /* DetailHistoryCollectionViewCell.swift */; };
 		AE1AF857247514060092AA5B /* StudentQuiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1AF856247514060092AA5B /* StudentQuiz.storyboard */; };
 		AE1AF8592475142F0092AA5B /* StudentMaterial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1AF8582475142F0092AA5B /* StudentMaterial.storyboard */; };
 		AE1AF85C2475192C0092AA5B /* LecturerProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1AF85A2475192C0092AA5B /* LecturerProfile.storyboard */; };
@@ -72,6 +73,7 @@
 		881870B2247344E4009720E2 /* quizSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizSecondViewController.swift; sourceTree = "<group>"; };
 		8851185324728D2700567AB7 /* dorra.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dorra.xcdatamodel; sourceTree = "<group>"; };
 		AE0247DC247BB2A600DB419A /* DetailHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHistoryVC.swift; sourceTree = "<group>"; };
+		AE0247DE247BC49A00DB419A /* DetailHistoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHistoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		AE1AF856247514060092AA5B /* StudentQuiz.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StudentQuiz.storyboard; sourceTree = "<group>"; };
 		AE1AF8582475142F0092AA5B /* StudentMaterial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StudentMaterial.storyboard; sourceTree = "<group>"; };
 		AE1AF85B2475192C0092AA5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = dorra/Base.lproj/LecturerProfile.storyboard; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		AECD3D8024727E8800B8616D /* dorra */ = {
 			isa = PBXGroup;
 			children = (
+				AE0247DE247BC49A00DB419A /* DetailHistoryCollectionViewCell.swift */,
 				AE0247DC247BB2A600DB419A /* DetailHistoryVC.swift */,
 				AE2F3A1A247A6335004438C2 /* LecturerProfileVC.swift */,
 				AE5651C62477C7E700CEB65D /* HistoryCollectionViewCell.swift */,
@@ -265,6 +268,7 @@
 				AE1AF860247524E40092AA5B /* LecturerHistoryVC.swift in Sources */,
 				880AEFA624743E1900BBA872 /* ResultCell.swift in Sources */,
 				AE2F3A1B247A6335004438C2 /* LecturerProfileVC.swift in Sources */,
+				AE0247DF247BC49A00DB419A /* DetailHistoryCollectionViewCell.swift in Sources */,
 				880AEFB02474790A00BBA872 /* questionListVC.swift in Sources */,
 				AECD3D8624727E8800B8616D /* SigninVC.swift in Sources */,
 				5AFCEEF62473022B0038518C /* SignupVC.swift in Sources */,

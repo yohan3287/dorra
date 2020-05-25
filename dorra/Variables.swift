@@ -5,8 +5,9 @@
 //  Created by Jacob Andrean on 19/05/20.
 //  Copyright © 2020 MC2G7. All rights reserved.
 //
-
+ 
 import Foundation
+
 import CloudKit
 import UIKit
 
@@ -43,12 +44,11 @@ struct Course {
     var duration: Int!
 }
 
-
 var array = [Question]()
 struct Question {
     var question: String!
     var trueAnswer: String!
-    
+
     func check(answer: String) -> Bool {
         if answer == trueAnswer {
             return true
@@ -59,7 +59,6 @@ struct Question {
     
 // timer soal pake dispatch ganti
 }
-
 
 extension UIView {
 

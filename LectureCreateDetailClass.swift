@@ -26,6 +26,15 @@ class LectureCreateDetailClass: UIViewController {
     @IBOutlet weak var answerTF3: UITextField!
     @IBOutlet weak var answerTF4: UITextField!
     
+    // MARK: Material Outlet
+    @IBOutlet weak var titleTF: UITextField!
+    @IBOutlet weak var guidingResourceTF: UITextField!
+    @IBOutlet weak var linkTF: UITextField!
+    @IBOutlet weak var notesTF: UITextField!
+    
+    
+    @IBOutlet weak var materialView: UIView!
+    @IBOutlet weak var quizView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,27 +47,34 @@ class LectureCreateDetailClass: UIViewController {
         
         switch segmentedControl.selectedSegmentIndex {
         case 0:
-            questionView.isHidden = true
-            answerView1.isHidden = true
-            answerView2.isHidden = true
-            answerView3.isHidden = true
-            answerView4.isHidden = true
-            newQuestionButton.isHidden = true
+//            questionView.isHidden = true
+//            answerView1.isHidden = true
+//            answerView2.isHidden = true
+//            answerView3.isHidden = true
+//            answerView4.isHidden = true
+//            newQuestionButton.isHidden = true
+            quizView.isHidden = true
+            materialView.isHidden = false
+            
         case 1:
-            questionView.isHidden = false
-            answerView1.isHidden = false
-            answerView2.isHidden = false
-            answerView3.isHidden = false
-            answerView4.isHidden = false
-            newQuestionButton.isHidden = false
+//            questionView.isHidden = false
+//            answerView1.isHidden = false
+//            answerView2.isHidden = false
+//            answerView3.isHidden = false
+//            answerView4.isHidden = false
+//            newQuestionButton.isHidden = false
+            quizView.isHidden = false
+            materialView.isHidden = true
             
         default:
-            questionView.isHidden = true
-            answerView1.isHidden = true
-            answerView2.isHidden = true
-            answerView3.isHidden = true
-            answerView4.isHidden = true
-            newQuestionButton.isHidden = true
+//            questionView.isHidden = true
+//            answerView1.isHidden = true
+//            answerView2.isHidden = true
+//            answerView3.isHidden = true
+//            answerView4.isHidden = true
+//            newQuestionButton.isHidden = true
+            quizView.isHidden = true
+            materialView.isHidden = false
         }
         
     }
@@ -70,11 +86,13 @@ class LectureCreateDetailClass: UIViewController {
         var answer3 = ""
         var answer4 = ""
         
-        questionTF.text = question
-        answerTF1.text = answer1
-        answerTF2.text = answer2
-        answerTF3.text = answer3
-        answerTF4.text = answer4
+   
+
+        question = questionTF.text ?? ""
+        answer1 = answerTF1.text ?? ""
+        answer2 = answerTF2.text ?? ""
+        answer3 = answerTF3.text ?? ""
+        answer4 = answerTF4.text ?? ""
         
         array.append(Question(question: question, trueAnswer: answer1))
         
@@ -88,6 +106,11 @@ class LectureCreateDetailClass: UIViewController {
         
         
     }
+    
+    @IBAction func saveButton(_ sender: UIBarButtonItem) {
+        
+    }
+    
     
     
 }

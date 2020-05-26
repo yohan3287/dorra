@@ -80,6 +80,7 @@ class MapJourneyVC: UIViewController {
     }
     
     @IBAction func stage5Button(_ sender: Any) {
+        performSegue(withIdentifier: "toMaterial", sender: nil)
     }
     
     @IBAction func backButton(_ sender: Any) {

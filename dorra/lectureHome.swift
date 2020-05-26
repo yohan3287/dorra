@@ -11,11 +11,11 @@ import UIKit
 class lectureHome: UIViewController {
     
     // MARK: TABLE AND CV
-    public override func numberOfSections(in tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
     
-    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       
         switch section {
             case 1:
@@ -31,7 +31,7 @@ class lectureHome: UIViewController {
         
     }
     
-    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section{
             
         case 1:
@@ -74,7 +74,7 @@ class lectureHome: UIViewController {
         
     }
     
-    public override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 1:
             return "Today"
@@ -100,7 +100,7 @@ class lectureHome: UIViewController {
         }
     }
     
-    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.section {
            case 1:
                for index in 0...arrayToday.count {
@@ -123,7 +123,7 @@ class lectureHome: UIViewController {
            }
     }
     
-    public override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
             switch indexPath.section {
     //        case 0:
     //            if let cell = cell as? TodayTVCell {
@@ -142,7 +142,7 @@ class lectureHome: UIViewController {
             }
         }
     
-    public override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
         case 1:
             return 78
@@ -161,8 +161,8 @@ class lectureHome: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        homeTableView.dataSource = self
-        homeTableView.delegate = self
+        self.homeTableView.dataSource = self
+        self.homeTableView.delegate = self
         
         self.profilePhoto.layer.masksToBounds = false
         self.profilePhoto.layer.cornerRadius = self.profilePhoto.frame.size.width / 2

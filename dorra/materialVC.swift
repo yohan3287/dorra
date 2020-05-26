@@ -8,7 +8,7 @@
 
 import UIKit
 
-class materialVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class materialVC: UIViewController {
    
 
     
@@ -26,12 +26,12 @@ class materialVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
 
-    func numberOfSections(in tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
             // #warning Incomplete implementation, return the number of sections
             return 1
         }
 
-         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return materials.count
             
         }
@@ -49,7 +49,7 @@ class materialVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //       }
 //
       
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //        switch indexPath.section {
         //        case 0:
         let cell = tableView.dequeueReusableCell(withIdentifier: "materialCellID", for: indexPath) as? materialCell
@@ -71,6 +71,9 @@ class materialVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         //            return UITableViewCell()
         
     }
+    @IBAction func finishButton(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 //            let cell = tableView.dequeueReusableCell(withIdentifier: "materialCellID", for: indexPath) as? materialCell
 //            cell?.materialObj = materials[indexPath.row]
@@ -79,6 +82,6 @@ class materialVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
 
 
-func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-}
+//func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//}
 

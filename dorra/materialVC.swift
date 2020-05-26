@@ -72,6 +72,7 @@ class materialVC: UIViewController {
         
     }
     @IBAction func finishButton(_ sender: UIButton) {
+        isComplete[0] = true
         dismiss(animated: true, completion: nil)
     }
 }

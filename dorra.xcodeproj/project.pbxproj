@@ -17,6 +17,8 @@
 		5AFCEEF8247309CC0038518C /* Students+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCEEF7247309CC0038518C /* Students+Extension.swift */; };
 		5AFCEEFC24730B470038518C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFCEEFB24730B470038518C /* CloudKit.framework */; };
 		5AFCEF0024730E220038518C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCEEFF24730E220038518C /* UIViewController+Extension.swift */; };
+		884E122B247D26F800F101F5 /* StudentQuiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884E122A247D26F800F101F5 /* StudentQuiz.storyboard */; };
+		884E122D247D2A5F00F101F5 /* doneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E122C247D2A5F00F101F5 /* doneVC.swift */; };
 		8851185424728D2700567AB7 /* dorra.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8851185224728D2600567AB7 /* dorra.xcdatamodeld */; };
 		AE0247E6247C323F00DB419A /* LectureAllClassTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0247E2247C323F00DB419A /* LectureAllClassTVCell.swift */; };
 		AE0247E7247C323F00DB419A /* LectureTodayTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0247E3247C323F00DB419A /* LectureTodayTVCell.swift */; };
@@ -27,7 +29,6 @@
 		AE0247F1247C337200DB419A /* Quises.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE0247F0247C337200DB419A /* Quises.plist */; };
 		AE0247F3247C339C00DB419A /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0247F2247C339C00DB419A /* MyCell.swift */; };
 		AE0247F5247C33AB00DB419A /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0247F4247C33AB00DB419A /* MyCell.xib */; };
-		AE0247F7247C342100DB419A /* StudentQuiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0247F6247C342100DB419A /* StudentQuiz.storyboard */; };
 		AE0247F9247C345900DB419A /* resultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0247F8247C345900DB419A /* resultVC.swift */; };
 		AE0247FB247C347A00DB419A /* resultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0247FA247C347A00DB419A /* resultTableViewController.swift */; };
 		AE0247FD247C34A300DB419A /* LectureDetailClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0247FC247C34A300DB419A /* LectureDetailClass.swift */; };
@@ -76,6 +77,8 @@
 		5AFCEEF924730B420038518C /* dorra.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dorra.entitlements; sourceTree = "<group>"; };
 		5AFCEEFB24730B470038518C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		5AFCEEFF24730E220038518C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		884E122A247D26F800F101F5 /* StudentQuiz.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StudentQuiz.storyboard; path = dorra/StudentQuiz.storyboard; sourceTree = "<group>"; };
+		884E122C247D2A5F00F101F5 /* doneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doneVC.swift; sourceTree = "<group>"; };
 		8851185324728D2700567AB7 /* dorra.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dorra.xcdatamodel; sourceTree = "<group>"; };
 		AE0247E2247C323F00DB419A /* LectureAllClassTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LectureAllClassTVCell.swift; path = dorra/LectureHome/LectureAllClassTVCell.swift; sourceTree = SOURCE_ROOT; };
 		AE0247E3247C323F00DB419A /* LectureTodayTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LectureTodayTVCell.swift; path = dorra/LectureHome/LectureTodayTVCell.swift; sourceTree = SOURCE_ROOT; };
@@ -86,7 +89,6 @@
 		AE0247F0247C337200DB419A /* Quises.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Quises.plist; path = dorra/Quises.plist; sourceTree = "<group>"; };
 		AE0247F2247C339C00DB419A /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCell.swift; path = dorra/MyCell.swift; sourceTree = "<group>"; };
 		AE0247F4247C33AB00DB419A /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyCell.xib; path = dorra/MyCell.xib; sourceTree = "<group>"; };
-		AE0247F6247C342100DB419A /* StudentQuiz.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StudentQuiz.storyboard; path = dorra/StudentQuiz.storyboard; sourceTree = "<group>"; };
 		AE0247F8247C345900DB419A /* resultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = resultVC.swift; path = dorra/resultVC.swift; sourceTree = "<group>"; };
 		AE0247FA247C347A00DB419A /* resultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = resultTableViewController.swift; path = dorra/resultTableViewController.swift; sourceTree = "<group>"; };
 		AE0247FC247C34A300DB419A /* LectureDetailClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LectureDetailClass.swift; path = dorra/LectureDetailClass.swift; sourceTree = "<group>"; };
@@ -177,11 +179,12 @@
 				AE0247F2247C339C00DB419A /* MyCell.swift */,
 				AE0247FA247C347A00DB419A /* resultTableViewController.swift */,
 				AE0247F8247C345900DB419A /* resultVC.swift */,
-				AE0247F6247C342100DB419A /* StudentQuiz.storyboard */,
 				AE0247EC247C32F200DB419A /* ResultCell.swift */,
 				AE024804247C350300DB419A /* questionTableViewController.swift */,
 				AE024806247C352300DB419A /* questionListVC.swift */,
 				AE024808247C353300DB419A /* quizSecondViewController.swift */,
+				884E122A247D26F800F101F5 /* StudentQuiz.storyboard */,
+				884E122C247D2A5F00F101F5 /* doneVC.swift */,
 				AE02480A247C354F00DB419A /* Dummy.swift */,
 				5AD398282472B3580030B5A1 /* StudentProgress.storyboard */,
 				AE02480C247C356500DB419A /* MTRViewController.swift */,
@@ -308,7 +311,7 @@
 				5AD398252472B3170030B5A1 /* StudentActivity.storyboard in Resources */,
 				AE02481A247C383F00DB419A /* Main.storyboard in Resources */,
 				5AD3982A2472B3580030B5A1 /* StudentProgress.storyboard in Resources */,
-				AE0247F7247C342100DB419A /* StudentQuiz.storyboard in Resources */,
+				884E122B247D26F800F101F5 /* StudentQuiz.storyboard in Resources */,
 				AE1AF85C2475192C0092AA5B /* LecturerProfile.storyboard in Resources */,
 				AE0247F5247C33AB00DB419A /* MyCell.xib in Resources */,
 				AE024815247C35C200DB419A /* Signup.storyboard in Resources */,
@@ -333,6 +336,7 @@
 				AECD3D8624727E8800B8616D /* SigninVC.swift in Sources */,
 				AE02482A247C38E900DB419A /* TodayTVCell.swift in Sources */,
 				AE0247FF247C34BF00DB419A /* lectureHome.swift in Sources */,
+				884E122D247D2A5F00F101F5 /* doneVC.swift in Sources */,
 				AE024805247C350300DB419A /* questionTableViewController.swift in Sources */,
 				AE1AF860247524E40092AA5B /* LecturerHistoryVC.swift in Sources */,
 				AE0247E9247C323F00DB419A /* LectureTomorrowTVCell.swift in Sources */,

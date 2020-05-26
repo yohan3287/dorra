@@ -21,6 +21,7 @@ class quizSecondViewController: UIViewController {
     @IBOutlet weak var answerC: UIButton!
     @IBOutlet weak var answerD: UIButton!
     
+    @IBOutlet weak var buttonText: UIButton!
     
     @IBOutlet weak var quizQuestion: UIView!
     @IBOutlet weak var questionNumber: UILabel!
@@ -33,6 +34,9 @@ class quizSecondViewController: UIViewController {
     
     // collection view array
     var numberArray = ["1", "2", "3" ,"4", "5", "6", "7", "8" ,"9", "10", "11", "12", "13", "14", "15"]
+    
+
+    
     
     
     //question
@@ -47,8 +51,26 @@ class quizSecondViewController: UIViewController {
         answerC.layer.cornerRadius = 15
         answerD.layer.cornerRadius = 15
         
+       
+        
     }
     
+    @IBAction func nextButton(_ sender: Any) {
+        if questionNumbers == questionListVC().list.count - 1{
+            buttonText.setTitle("Finish", for: .normal)
+            performSegue(withIdentifier: "toResult", sender: nil)
+        }
+        
+        
+//        @IBAction private func locationRightButton(_ sender: AnyObject) {           let visibleItems: NSArray = self.locationsCollectionView.indexPathsForVisibleItems as NSArray           let currentItem: IndexPath = visibleItems.object(at: 0) as! IndexPath           let nextItem: IndexPath = IndexPath(item: currentItem.item + 1, section: 0)             if nextItem.row < storedLocationsData.count {               self.locationsCollectionView.scrollToItem(at: nextItem, at: .left, animated: true)                         }                }
+
+        
+        
+        updateQuestion()
+        updateUI()
+        
+        
+    }
     // collection view
     func setupUI() {
         indexColletion.register(UINib(nibName: "MyCell", bundle: nil), forCellWithReuseIdentifier: "myCellID")
@@ -66,32 +88,26 @@ class quizSecondViewController: UIViewController {
             answerD.setTitle(allQuestion.list[questionNumbers].optionD, for: UIControl.State.normal)
             selectedAnswer = allQuestion.list[questionNumbers].correctAnswer
             
-        }else{
-            let alert = UIAlertController(title: "Awesome", message: "End of Quiz. Do you want to start over?", preferredStyle: .alert)
-            let restartAction = UIAlertAction(title: "Restart", style: .default, handler: {ACTION in self.restartQuiz()})
-            
-            alert.addAction(restartAction)
-            present(alert, animated: true, completion: nil)
-            
         }
+      
         updateUI()
     }
     
     @IBAction func selectingAnswer(_ sender: UIButton) {
-        print(sender)
-        
+        print(sender.tag)
+        allQuestion.list[questionNumbers].optionSelected = sender.tag
     }
     
     
     func updateUI(){
         
-        scoreLabel.text = "Score: \(score)"
-        questionNumber.text = "\(questionNumber)/\(allQuestion.list.count)"
-        // ini yang atas bener questionNumber atau questionNumbers
-        
+//        scoreLabel.text = "Score: \(score)"
+        questionNumber.text = "\(questionNumbers+1). "
+       
+
+        // Update UI based on the selected option
     }
     func restartQuiz(){
-        
         score = 0
         questionNumbers = 0
         updateQuestion()
@@ -100,7 +116,7 @@ class quizSecondViewController: UIViewController {
 // collection view
 extension quizSecondViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return numberArray.count
+        return allQuestion.list.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -108,8 +124,16 @@ extension quizSecondViewController: UICollectionViewDataSource, UICollectionView
         cell.numberLabel.text = numberArray[indexPath.row]
         return cell
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Selected index : \(indexPath.row + 1)")
+        questionNumbers = indexPath.row
+        updateQuestion()
+        
+        if questionNumbers == questionListVC().list.count - 1{
+            buttonText.setTitle("Finish", for: .normal)
+            
+        }
     }
 }
 

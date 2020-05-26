@@ -10,20 +10,21 @@ import Foundation
 
 class questionTableViewController{
     
-    let question: String
-    let optionA: String
-    let optionB: String
-    let optionC: String
-    let optionD: String
-    let correctAnswer: Int
+    var question: String
+    var optionA: String
+    var optionB: String
+    var optionC: String
+    var optionD: String
+    var correctAnswer: Int
+    var optionSelected: Int
     
-   init(questionText: String, choiceA: String, choiceB: String, choiceC: String, choiceD: String, answer: Int) {
-    question = questionText
-    optionA = choiceA
-    optionB = choiceB
-    optionC = choiceC
-    optionD = choiceD
-    correctAnswer = answer
-    
-}
+    init(questionText: String, choiceA: String, choiceB: String, choiceC: String, choiceD: String, answer: Int, optSelected: Int) {
+        question = questionText
+        optionA = choiceA
+        optionB = choiceB
+        optionC = choiceC
+        optionD = choiceD
+        correctAnswer = answer
+        optionSelected = optSelected // we need to add this one variable for saving our selected option, and value must be an Int, so we can compare it to the correct one.
+    }
 }

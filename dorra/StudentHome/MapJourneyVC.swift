@@ -77,6 +77,7 @@ class MapJourneyVC: UIViewController {
     }
     
     @IBAction func stage4Button(_ sender: Any) {
+        performSegue(withIdentifier: "toQuiz", sender: nil)
     }
     
     @IBAction func stage5Button(_ sender: Any) {

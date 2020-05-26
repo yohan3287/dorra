@@ -40,12 +40,29 @@ class CloudKitHelper {
         print(record)
     }
     
-    func saveRecord2(title: String, day: String) {
+    func createClassRecord() {
+        // create record id
+        //let recordId = CKRecord.ID(recordName: "1")
+        
+        // create record object
+        let recordObject = CKRecord(recordType: "Class")
+        
+        // create dictionary
+//        recordObject["title"] = String
+//        recordObject["code"] = "0001"
+//        recordObject["period"] = "Monday"
+//        recordObject["createdAt"] = Date()
+        
+        saveRecord(record: recordObject)
+    }
+    
+    func createClass(title: String, code: String, period: String) {
         let container = CKContainer.default()
         let containerType = container.publicCloudDatabase
-        let records = CKRecord(recordType: "Courses")
+        let records = CKRecord(recordType: "Class")
         records.setValue(title, forKey: "title")
-        records.setValue(day, forKey: "day")
+        records.setValue(code, forKey: "code")
+        records.setValue(period, forKey: "period")
         //        print(record.allTokens(),record.allKeys())
         containerType.save(records) { (savedRecord, error) in
             if error == nil {
@@ -57,12 +74,13 @@ class CloudKitHelper {
     }
     
     func fetchAll() {
+        /*
         let container = CKContainer.default()
         let containerType = container.publicCloudDatabase
         
         // fetch all record
         let predicate = NSPredicate(value: true)
-        let query = CKQuery(recordType: "Courses", predicate: predicate)
+        let query = CKQuery(recordType: "Class", predicate: predicate)
         
         // sort description
         let sort = NSSortDescriptor(key: "createdAt", ascending: false)
@@ -73,8 +91,9 @@ class CloudKitHelper {
                 print(err.localizedDescription)
                 return
             }
-        }
+        }*/
     }
+    
     
     func fetchByName(contain: String) {
         let container = CKContainer.default()

@@ -680,6 +680,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAH-Cn-QuN">
+                                        <rect key="frame" x="190" y="537" width="34" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveButton:" destination="iup-7G-07e" eventType="touchUpInside" id="zJF-Ar-Msx"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
@@ -694,24 +702,15 @@
                         <color key="backgroundColor" red="0.83529411764705885" green="0.90196078431372551" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="gkW-w4-tzl"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Gbb-KN-Llg">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="GcF-sR-L9Y">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XvV-CH-k0a">
-                                <rect key="frame" x="360" y="7" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save"/>
-                            </button>
-                            <connections>
-                                <action selector="saveButton:" destination="iup-7G-07e" id="qv2-Md-awx"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Gbb-KN-Llg"/>
                     <connections>
+                        <outlet property="codeTextField" destination="tZq-oT-08j" id="brM-TW-4UC"/>
                         <outlet property="periodPicker" destination="VUk-Xg-iHU" id="9SC-ww-g7J"/>
                         <outlet property="periodTextField" destination="9MQ-WK-aJ4" id="Scb-Kp-8aD"/>
                         <outlet property="remindPicker" destination="56X-ee-F52" id="iL2-Fh-dBE"/>
                         <outlet property="repeatPicker" destination="3fW-8h-qHv" id="8Hf-lZ-gOE"/>
                         <outlet property="shiftTextField1" destination="Ezv-8p-qSm" id="9Og-zx-LtB"/>
+                        <outlet property="titleTextField" destination="lIa-Ud-vBd" id="wDp-fD-7wK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8tG-ol-1q7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

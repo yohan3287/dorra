@@ -14,6 +14,8 @@ import UIKit
 var titles = [String]()
 var recordIDs = [CKRecord.ID]()
 
+var isComplete = [false,false,false,false,false]
+
 var studentAccount: [Students] = []
 var lecturerAccount: [Lecture] = []
 var asStudent: Bool = true

@@ -60,14 +60,14 @@ class quizSecondViewController: UIViewController {
             buttonText.setTitle("Finish", for: .normal)
             performSegue(withIdentifier: "toResult", sender: nil)
         }
+        else{
+            questionNumbers = questionNumbers + 1
+            updateQuestion()
+            updateUI()
+        }
         
         
 //        @IBAction private func locationRightButton(_ sender: AnyObject) {           let visibleItems: NSArray = self.locationsCollectionView.indexPathsForVisibleItems as NSArray           let currentItem: IndexPath = visibleItems.object(at: 0) as! IndexPath           let nextItem: IndexPath = IndexPath(item: currentItem.item + 1, section: 0)             if nextItem.row < storedLocationsData.count {               self.locationsCollectionView.scrollToItem(at: nextItem, at: .left, animated: true)                         }                }
-
-        
-        
-        updateQuestion()
-        updateUI()
         
         
     }

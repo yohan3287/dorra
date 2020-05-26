@@ -50,6 +50,8 @@ class LectureAddClass: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     }
     
     
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var codeTextField: UITextField!
     @IBOutlet weak var periodTextField: UITextField!
     @IBOutlet weak var shiftTextField1: UITextField!
     @IBOutlet weak var repeatTextField: UITextField!
@@ -127,7 +129,19 @@ class LectureAddClass: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     
     
     // UNFINISHED !!
-    @IBAction func saveButton(_ sender: UIBarButtonItem) {
+    @IBAction func saveButton(_ sender: UIButton) {
+        var title = ""
+        var code = ""
+        var period = ""
+        
+        title = titleTextField.text ?? ""
+        code = codeTextField.text ?? ""
+        period = periodTextField.text ?? ""
+        
+        CloudKitHelper().createClassRecord()
+        CloudKitHelper().createClass(title: title, code: code, period: period)
+        
+        print("work")
     }
     
     override func viewDidLoad() {

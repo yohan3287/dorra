@@ -18,7 +18,11 @@ class doneVC: UIViewController {
     
 
     @IBAction func doneButton(_ sender: Any) {
-        performSegue(withIdentifier: "toQuizHome", sender: nil)
+        arrayAllClass.removeAll()
+        arrayToday.removeAll()
+        arrayTomorrow.removeAll()
+        performSegue(withIdentifier: "toHomeWoi", sender: nil)
+        
     }
     
 }

@@ -39,8 +39,9 @@ class StudentHomeVC: UIViewController {
         self.profilePhoto.clipsToBounds = true
         
         
-        arrayAllClass.append(Matkul(time: "1", kelas: "kelas", day: "hari", type: 1))
-        arrayAllClass.append(Matkul(time: "2", kelas: "kelas2", day: "hari2", type: 2))
+        arrayAllClass.append(Matkul(time: "09:45", kelas: "Math", day: "Monday", type: 1))
+        arrayAllClass.append(Matkul(time: "13:50", kelas: "Web Design", day: "Tuesday", type: 2))
+        arrayAllClass.append(Matkul(time: "16:30", kelas: "Biolgy", day: "Thursday", type: 3))
         
         
         for index in 0...arrayAllClass.count-1 {

@@ -182,9 +182,9 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gG0-1K-vbF">
-                                <rect key="frame" x="329" y="173" width="46" height="30"/>
+                                <rect key="frame" x="330" y="173" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Profile"/>
                                 <connections>
                                     <action selector="toProfile:" destination="fLm-Bm-fKr" eventType="touchUpInside" id="FQm-fE-WP7"/>
                                 </connections>

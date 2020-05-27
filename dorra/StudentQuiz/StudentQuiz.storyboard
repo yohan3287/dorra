@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aGM-LM-NNy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aGM-LM-NNy">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="nXa-4t-Qdc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aAB-WQ-YpX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iNY-uU-Crx">
@@ -92,14 +92,14 @@
             <objects>
                 <viewController id="9ra-Dn-hI0" customClass="quizSecondViewController" customModule="dorra" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VBY-Ll-t3i">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9eA-be-Em7">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="214"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="180"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sKY-i0-ITr">
-                                        <rect key="frame" x="0.0" y="140" width="414" height="55"/>
+                                        <rect key="frame" x="0.0" y="106" width="414" height="55"/>
                                         <color key="backgroundColor" red="0.82111155989999995" green="0.89988768100000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="aZO-Lx-BEQ"/>
@@ -144,7 +144,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4D-g5-ndd">
-                                <rect key="frame" x="20" y="248" width="374" height="105"/>
+                                <rect key="frame" x="20" y="302" width="374" height="105"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7I-2U-xuS">
                                         <rect key="frame" x="45" y="10" width="319" height="85"/>
@@ -175,7 +175,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GL4-xJ-Iu6">
-                                <rect key="frame" x="20" y="378" width="162" height="151"/>
+                                <rect key="frame" x="20" y="432" width="162" height="151"/>
                                 <color key="backgroundColor" red="0.98385661840000005" green="0.90169090029999999" blue="0.91764825579999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="151" id="SDX-Ot-6ij"/>
@@ -187,7 +187,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNt-MV-w3H">
-                                <rect key="frame" x="232" y="378" width="162" height="151"/>
+                                <rect key="frame" x="232" y="432" width="162" height="151"/>
                                 <color key="backgroundColor" red="0.99123662710000005" green="0.97070473430000004" blue="0.85096275809999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -195,7 +195,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jc0-et-3cE">
-                                <rect key="frame" x="20" y="548" width="162" height="151"/>
+                                <rect key="frame" x="20" y="602" width="162" height="151"/>
                                 <color key="backgroundColor" red="0.95309215780000001" green="0.97652178999999995" blue="0.97254949810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -203,7 +203,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffX-Vo-Gnx">
-                                <rect key="frame" x="232" y="548" width="162" height="151"/>
+                                <rect key="frame" x="232" y="602" width="162" height="151"/>
                                 <color key="backgroundColor" red="0.92606520650000002" green="0.96797853710000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -211,13 +211,13 @@
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fi5-yh-fKC">
-                                <rect key="frame" x="329" y="219" width="45" height="21"/>
+                                <rect key="frame" x="329" y="273" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIc-4W-TrL">
-                                <rect key="frame" x="20" y="719" width="374" height="60"/>
+                                <rect key="frame" x="20" y="773" width="374" height="60"/>
                                 <color key="backgroundColor" red="0.90344798559999995" green="0.35664981600000001" blue="0.39606553319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="4kH-ut-5NS"/>
@@ -286,7 +286,7 @@
             <objects>
                 <viewController id="lzW-eX-9iF" customClass="doneVC" customModule="dorra" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GUs-xO-EG5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pp9-n1-Kcr">
@@ -357,7 +357,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="doneButton:" destination="lzW-eX-9iF" eventType="touchUpInside" id="L0K-O2-JAx"/>
-                                                    <segue destination="nXa-4t-Qdc" kind="show" identifier="toQuizHome" id="e3R-Qq-NBm"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -371,17 +370,30 @@
                         <viewLayoutGuide key="safeArea" id="d21-oU-wDz"/>
                     </view>
                     <navigationItem key="navigationItem" id="1ZI-A5-nD1"/>
+                    <connections>
+                        <segue destination="Jgn-YR-XVH" kind="show" identifier="toStudentHome" id="QMM-aw-zps"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wDG-w0-HbR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5384.057971014493" y="1768.5267857142856"/>
+        </scene>
+        <!--StudentHome-->
+        <scene sceneID="bQr-TT-YNf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StudentHome" id="Jgn-YR-XVH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xVY-EH-NDq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KLR-gF-xVE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5375" y="2369"/>
         </scene>
         <!--ResultVC-->
         <scene sceneID="Fx2-zh-Acc">
             <objects>
                 <tableViewController id="DJP-AG-bk8" customClass="resultVC" customModule="dorra" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Eaz-R8-o3M" customClass="result">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -445,9 +457,6 @@
             <point key="canvasLocation" x="2771.0144927536235" y="1768.5267857142856"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="e3R-Qq-NBm"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="golden-winners-cup_1284-18399" width="626" height="626"/>
     </resources>

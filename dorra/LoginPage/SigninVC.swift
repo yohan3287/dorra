@@ -33,6 +33,14 @@ class SigninVC: UIViewController {
         passwordTextField.leftViewMode = .always
     }
     
+    func assignCurrentAccount(name: String!, title: String!, univ: String!, phone: String!, email: String!) {
+        currentName = name
+        currentTitle = title
+        currentUniversity = univ
+        currentPhone = phone
+        currentEmail = email
+    }
+    
     func studentSignin() {
         if emailTextField.text == "" || passwordTextField.text == "" {
             let alert = UIAlertController(title: "alert message", message: "fill email and password!", preferredStyle: .alert)
@@ -46,9 +54,10 @@ class SigninVC: UIViewController {
                     status = true
                     let alert = UIAlertController(title: "alert message", message: "login success", preferredStyle: .alert)
                     self.present(alert, animated: true, completion: nil)
+                    CloudKitHelper().fetchAllData()
+                    assignCurrentAccount(name: user.studentName, title: "Computer Science", univ: user.studentUniversity, phone: user.studentPhone, email: user.studentEmail)
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         alert.dismiss(animated: true) {
-                            CloudKitHelper().fetchAllData()
                             self.performSegue(withIdentifier: "toStudentHome", sender: nil)
                         }
                     }
@@ -76,6 +85,7 @@ class SigninVC: UIViewController {
                     let alert = UIAlertController(title: "alert message", message: "login success", preferredStyle: .alert)
                     self.present(alert, animated: true, completion: nil)
                     CloudKitHelper().fetchAllData()
+                    assignCurrentAccount(name: user.lectureName, title: "Computer Science", univ: user.lectureUniversity, phone: user.lecturePhone, email: user.lectureEmail)
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                         alert.dismiss(animated: true) {
                             self.performSegue(withIdentifier: "toLecturerHome", sender: nil)

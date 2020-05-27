@@ -18,7 +18,8 @@ class doneVC: UIViewController {
     
 
     @IBAction func doneButton(_ sender: Any) {
-        performSegue(withIdentifier: "toQuizHome", sender: nil)
+        status = true
+        performSegue(withIdentifier: "toStudentHome", sender: nil)
     }
     
 }

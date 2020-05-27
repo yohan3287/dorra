@@ -42,24 +42,26 @@ class StudentHomeVC: UIViewController {
         let tomorrowDate = Calendar.current.date(byAdding: dateComponent, to: currentDate)
         let tomorrowDateString = dateFormatter.string(from: tomorrowDate!)
     
-        for index in 0...arrayAllClass2.count-1 {
-            let classDateString = dateFormatter.string(from: arrayAllClass2[index].shift)
-            if classDateString == currentDateString {
-                arrayToday2.append(arrayAllClass2[index])
-            } else {
-                print("Today failllllllllllllll")
+        if status == false {
+            for index in 0...arrayAllClass2.count-1 {
+                let classDateString = dateFormatter.string(from: arrayAllClass2[index].shift)
+                if classDateString == currentDateString {
+                    arrayToday2.append(arrayAllClass2[index])
+                } else {
+                    print("Today failllllllllllllll")
+                }
             }
-        }
-        
-        for index in 0...arrayAllClass2.count-1{
-            let classDateString = dateFormatter.string(from: arrayAllClass2[index].shift)
-            if classDateString == tomorrowDateString {
-                arrayTomorrow2.append(arrayAllClass2[index])
-            } else {
-                print("tomorrow Fail")
+            
+            for index in 0...arrayAllClass2.count-1{
+                let classDateString = dateFormatter.string(from: arrayAllClass2[index].shift)
+                if classDateString == tomorrowDateString {
+                    arrayTomorrow2.append(arrayAllClass2[index])
+                } else {
+                    print("tomorrow Fail")
+                }
             }
+            status = true
         }
-        
     }
   
     

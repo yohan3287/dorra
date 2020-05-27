@@ -21,12 +21,20 @@ class LecturerProfileVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        profilePictureImageView.image = #imageLiteral(resourceName: "3556940")
+        nameTextField.text = currentName
+        titleTextField.text = currentTitle
+        universityTextField.text = currentUniversity
+        phoneTextField.text = currentPhone
+        emailTextField.text = currentEmail
     }
     
     @IBAction func saveButton(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func signOutButton(_ sender: UIButton) {
+    @IBAction func signOutButton(_ sender: Any) {
+        performSegue(withIdentifier: "toLogin", sender: nil)
     }
     
     /*

@@ -86,3 +86,10 @@ extension UIView {
     
     
 }
+
+var status: Bool = false
+var currentName: String = ""
+var currentTitle: String = ""
+var currentUniversity: String = ""
+var currentPhone: String = ""
+var currentEmail: String = ""

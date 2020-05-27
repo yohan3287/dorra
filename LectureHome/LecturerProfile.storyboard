@@ -145,11 +145,22 @@
                         <outlet property="profilePictureImageView" destination="l62-au-B3m" id="hWd-Vt-hGZ"/>
                         <outlet property="titleTextField" destination="MH8-Xi-Soh" id="HBH-Dq-I6w"/>
                         <outlet property="universityTextField" destination="u8a-zb-GZd" id="KyS-FX-A2D"/>
+                        <segue destination="XKd-La-djW" kind="show" identifier="toLogin" id="Qmw-1O-ZxB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJ1-Sy-qwq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3240.579710144928" y="-597.32142857142856"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="beH-py-GNt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="XKd-La-djW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oPQ-yH-0SQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ixj-pG-uiZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3241" y="-121"/>
         </scene>
     </scenes>
 </document>

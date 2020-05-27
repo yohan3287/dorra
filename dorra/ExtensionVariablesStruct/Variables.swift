@@ -26,6 +26,10 @@ var arrayToday = [Matkul]()
 var arrayTomorrow = [Matkul]()
 var arrayAllClass = [Matkul]()
 
+var arrayToday2 = [Course]()
+var arrayTomorrow2 = [Course]()
+var arrayAllClass2 = [Course]()
+
 var selectedCourse = Matkul()
 struct Matkul {
     var time: String!
@@ -37,13 +41,10 @@ struct Matkul {
 struct Course {
     var title: String!
     var code: String!
-    var shiftStart: Date!
-    var shiftEnd: Date!
+    var shift: String!
     var period: String!
-    var year: Date!
-    var remindMe: Date!
-    var repeatRemind: String!
-    var duration: Int!
+//    var remindMe: Date!
+    var day: String!
 }
 
 var array = [Question]()

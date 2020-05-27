@@ -682,7 +682,7 @@
                                         <rect key="frame" x="181" y="278" width="183" height="45"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     </pickerView>
-                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9MQ-WK-aJ4">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9MQ-WK-aJ4">
                                         <rect key="frame" x="181" y="359" width="205" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -704,7 +704,7 @@
                                         <rect key="frame" x="164" y="461" width="238" height="54"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     </pickerView>
-                                    <pickerView tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Abu-vC-a5V">
+                                    <pickerView hidden="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Abu-vC-a5V">
                                         <rect key="frame" x="168" y="342" width="238" height="54"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     </pickerView>
@@ -719,7 +719,7 @@
                                         <exclude reference="3fW-8h-qHv"/>
                                         <exclude reference="56X-ee-F52"/>
                                         <exclude reference="VUk-Xg-iHU"/>
-                                        <exclude reference="9MQ-WK-aJ4"/>
+                                        <exclude reference="Abu-vC-a5V"/>
                                         <exclude reference="heK-nw-nsG"/>
                                     </mask>
                                 </variation>

@@ -56,7 +56,7 @@ class CloudKitHelper {
         saveRecord(record: recordObject)
     }
     
-    func createClass(title: String, code: String, shift:Date, period: String, days: String) {
+    func createClass(title: String, code: String, shift:String, period: String, days: String) {
         let container = CKContainer.default()
         let containerType = container.publicCloudDatabase
         let records = CKRecord(recordType: "Class")

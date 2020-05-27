@@ -27,9 +27,7 @@ class StudentHomeVC: UIViewController {
         }
 
         // Do any additional setup after loading the view.
-//        CloudKitHelper().createNewRecord()
-//        CloudKitHelper().saveRecord2(title: "biology", day: "Friday")
-//        CloudKitHelper().fetchAll()
+
         
         homeTableView.dataSource = self
         homeTableView.delegate = self
@@ -42,18 +40,50 @@ class StudentHomeVC: UIViewController {
         arrayAllClass.append(Matkul(time: "1", kelas: "kelas", day: "hari", type: 1))
         arrayAllClass.append(Matkul(time: "2", kelas: "kelas2", day: "hari2", type: 2))
         
+        let currentDate = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "YYYY-MM-dd"
+        let currentDateString = dateFormatter.string(from: currentDate)
+//        FunctionHelper().isDateInToday(currentDate)
         
-        for index in 0...arrayAllClass.count-1 {
-            if arrayAllClass[index].type == 1 {
-                arrayToday.append(arrayAllClass[index])
+        
+        print ("\(currentDate) ======== \(arrayAllClass2[0].shift)")
+                
+        
+        var dateComponent = DateComponents()
+        dateComponent.day = 1
+        let tomorrowDate = Calendar.current.date(byAdding: dateComponent, to: currentDate)
+        let tomorrowDateString = dateFormatter.string(from: tomorrowDate!)
+        print(tomorrowDateString)
+        
+    
+        for index in 0...arrayAllClass2.count-1 {
+            
+            let classDateString = dateFormatter.string(from: arrayAllClass2[index].shift)
+            
+            if classDateString == currentDateString {
+                arrayToday2.append(arrayAllClass2[index])
+            } else {
+                print("Today failllllllllllllll")
             }
         }
         
         for index in 0...arrayAllClass.count-1{
-            if arrayAllClass[index].type == 2 {
-                arrayTomorrow.append(arrayAllClass[index])
+            
+            let DateFormat = DateFormatter()
+            DateFormat.dateFormat = "YYYY-MM-dd"
+            let classDateString = dateFormatter.string(from: arrayAllClass2[index].shift)
+            
+            if classDateString == tomorrowDateString {
+                arrayTomorrow2.append(arrayAllClass2[index])
+            } else {
+                print("tomorrow Fail")
             }
+            
         }
+        
+        print("arrayallclass=======================> \(arrayAllClass2)")
+        print("arraytoday=======================> \(arrayToday2)")
     }
   
     
@@ -81,9 +111,9 @@ extension UIViewController: UITableViewDataSource, UITableViewDelegate {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return arrayToday.count
+            return arrayToday2.count
         case 1:
-            return arrayTomorrow.count
+            return arrayTomorrow2.count
         case 2:
             return 1
         default:
@@ -121,10 +151,16 @@ extension UIViewController: UITableViewDataSource, UITableViewDelegate {
         switch indexPath.section {
         case 0:
             if let cell = tableView.dequeueReusableCell(withIdentifier: getIdentifier(forSection: indexPath.section), for: indexPath) as? TodayTVCell {
-                if arrayToday.count != 0 {
-                    let course = arrayToday[indexPath.row]
-                    cell.classLabel.text = course.kelas
-                    cell.timeLabel.text = course.time
+                if arrayToday2.count != 0 {
+                    let course = arrayToday2[indexPath.row]
+                    cell.classLabel.text = course.title
+                    
+                    let format = DateFormatter()
+                    format.dateFormat = "HH:mm"
+                    let formattedShift = format.string(from: course.shift)
+                    print("=======================> \(formattedShift)")
+                    cell.timeLabel.text = formattedShift
+
                     return cell
                 } else {
                     return UITableViewCell()
@@ -134,10 +170,16 @@ extension UIViewController: UITableViewDataSource, UITableViewDelegate {
             }
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: getIdentifier(forSection: indexPath.section), for: indexPath) as? TomorrowTVCell {
-                if arrayTomorrow.count != 0 {
-                    let course = arrayTomorrow[indexPath.row]
-                    cell.classLabel.text = course.kelas
-                    cell.timeLabel.text = course.time
+                if arrayTomorrow2.count != 0 {
+                    let course = arrayTomorrow2[indexPath.row]
+                    cell.classLabel.text = course.title
+                    
+                    let format = DateFormatter()
+                    format.dateFormat = "HH:mm"
+                    let formattedShift = format.string(from: course.shift)
+                    print("=======================> \(formattedShift)")
+                    
+                    cell.timeLabel.text = formattedShift
                     return cell
                 } else {
                     return UITableViewCell()
@@ -160,20 +202,20 @@ extension UIViewController: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: false)
         switch indexPath.section {
         case 0:
-            for index in 0...arrayToday.count {
+            for index in 0...arrayToday2.count {
                 if indexPath.row == index {
                     print("today \(index)")
-                    courseTitle = arrayToday[index].kelas!
+                    courseTitle = arrayToday2[index].title
                     performSegue(withIdentifier: "toNavControllerMap", sender: nil)
                     selectedCourse = Matkul(time: "1", kelas: "2", day: "3", type: 4)
                    
                 }
             }
         case 1:
-            for index in 0...arrayTomorrow.count {
+            for index in 0...arrayTomorrow2.count {
                 if indexPath.row == index {
                     print("tomorrow\(index)")
-                    courseTitle = arrayTomorrow[index].kelas!
+                    courseTitle = arrayTomorrow2[index].title
                     performSegue(withIdentifier: "toNavControllerMap", sender: nil)
                     selectedCourse = Matkul(time: "1", kelas: "2", day: "3", type: 4)
                 }

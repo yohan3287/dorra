@@ -39,12 +39,12 @@ struct Matkul {
 }
 
 struct Course {
-    var title: String!
-    var code: String!
-    var shift: String!
-    var period: String!
-//    var remindMe: Date!
-    var day: String!
+    var title: String
+    var code: String
+    var shift: Date
+    var period: String
+//    var remindMe: Date
+    var day: String
 }
 
 var array = [Question]()

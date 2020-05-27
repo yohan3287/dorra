@@ -206,6 +206,8 @@
 		C8C33CD3247A6C5700EFA561 /* LectureHome */ = {
 			isa = PBXGroup;
 			children = (
+				AE024802247C34E100DB419A /* LecturerHistory.storyboard */,
+				AE1AF85A2475192C0092AA5B /* LecturerProfile.storyboard */,
 				5A5A98A624729BD600CFBC63 /* NavControllerLecturer.storyboard */,
 				AE0247FC247C34A300DB419A /* LectureDetailClass.swift */,
 				AE0247FE247C34BF00DB419A /* lectureHome.swift */,
@@ -226,8 +228,6 @@
 			isa = PBXGroup;
 			children = (
 				AE02482C247C3F2000DB419A /* StudentMaterial.storyboard */,
-				AE024802247C34E100DB419A /* LecturerHistory.storyboard */,
-				AE1AF85A2475192C0092AA5B /* LecturerProfile.storyboard */,
 				AE0247F4247C33AB00DB419A /* MyCell.xib */,
 				AE0247F0247C337200DB419A /* Quises.plist */,
 				AE0247F2247C339C00DB419A /* MyCell.swift */,

@@ -17,6 +17,7 @@
 		5AFCEEF8247309CC0038518C /* Students+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCEEF7247309CC0038518C /* Students+Extension.swift */; };
 		5AFCEEFC24730B470038518C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFCEEFB24730B470038518C /* CloudKit.framework */; };
 		5AFCEF0024730E220038518C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCEEFF24730E220038518C /* UIViewController+Extension.swift */; };
+		5AFDBD84247E8A4400BE2F81 /* FunctionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFDBD83247E8A4400BE2F81 /* FunctionHelper.swift */; };
 		884E122B247D26F800F101F5 /* StudentQuiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884E122A247D26F800F101F5 /* StudentQuiz.storyboard */; };
 		884E122D247D2A5F00F101F5 /* doneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E122C247D2A5F00F101F5 /* doneVC.swift */; };
 		8851185424728D2700567AB7 /* dorra.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8851185224728D2600567AB7 /* dorra.xcdatamodeld */; };
@@ -77,6 +78,7 @@
 		5AFCEEF924730B420038518C /* dorra.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dorra.entitlements; sourceTree = "<group>"; };
 		5AFCEEFB24730B470038518C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		5AFCEEFF24730E220038518C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		5AFDBD83247E8A4400BE2F81 /* FunctionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionHelper.swift; sourceTree = "<group>"; };
 		884E122A247D26F800F101F5 /* StudentQuiz.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StudentQuiz.storyboard; sourceTree = "<group>"; };
 		884E122C247D2A5F00F101F5 /* doneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doneVC.swift; sourceTree = "<group>"; };
 		8851185324728D2700567AB7 /* dorra.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dorra.xcdatamodel; sourceTree = "<group>"; };
@@ -204,6 +206,8 @@
 		C8C33CD3247A6C5700EFA561 /* LectureHome */ = {
 			isa = PBXGroup;
 			children = (
+				AE024802247C34E100DB419A /* LecturerHistory.storyboard */,
+				AE1AF85A2475192C0092AA5B /* LecturerProfile.storyboard */,
 				5A5A98A624729BD600CFBC63 /* NavControllerLecturer.storyboard */,
 				AE0247FC247C34A300DB419A /* LectureDetailClass.swift */,
 				AE0247FE247C34BF00DB419A /* lectureHome.swift */,
@@ -224,8 +228,6 @@
 			isa = PBXGroup;
 			children = (
 				AE02482C247C3F2000DB419A /* StudentMaterial.storyboard */,
-				AE024802247C34E100DB419A /* LecturerHistory.storyboard */,
-				AE1AF85A2475192C0092AA5B /* LecturerProfile.storyboard */,
 				AE0247F4247C33AB00DB419A /* MyCell.xib */,
 				AE0247F0247C337200DB419A /* Quises.plist */,
 				AE0247F2247C339C00DB419A /* MyCell.swift */,
@@ -261,11 +263,12 @@
 		C8F18A14247E7F1200A24331 /* ExtensionVariablesStruct */ = {
 			isa = PBXGroup;
 			children = (
-				AE024820247C38E900DB419A /* CloudKitHelper.swift */,
 				5A50DA73247315720010C842 /* Variables.swift */,
+				AE024820247C38E900DB419A /* CloudKitHelper.swift */,
 				5A50DA7524731E7C0010C842 /* Lecture+Extension.swift */,
 				5AFCEEF7247309CC0038518C /* Students+Extension.swift */,
 				5AFCEEFF24730E220038518C /* UIViewController+Extension.swift */,
+				5AFDBD83247E8A4400BE2F81 /* FunctionHelper.swift */,
 			);
 			path = ExtensionVariablesStruct;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				5A50DA7624731E7C0010C842 /* Lecture+Extension.swift in Sources */,
 				AE02482B247C38E900DB419A /* TomorrowTVCell.swift in Sources */,
 				AE0247ED247C32F200DB419A /* ResultCell.swift in Sources */,
+				5AFDBD84247E8A4400BE2F81 /* FunctionHelper.swift in Sources */,
 				AE024801247C34CE00DB419A /* LectureAddClass.swift in Sources */,
 				AE024813247C35AB00DB419A /* materialCell.swift in Sources */,
 				5A50DA78247328810010C842 /* CustomTextField.swift in Sources */,

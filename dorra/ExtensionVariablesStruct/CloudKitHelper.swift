@@ -56,7 +56,7 @@ class CloudKitHelper {
         saveRecord(record: recordObject)
     }
     
-    func createClass(title: String, code: String, shift:String, period: String, days: String) {
+    func createClass(title: String, code: String, shift:Date, period: String, days: String) {
         let container = CKContainer.default()
         let containerType = container.publicCloudDatabase
         let records = CKRecord(recordType: "Class")
@@ -95,6 +95,33 @@ class CloudKitHelper {
                 return
             }
         }*/
+    }
+    
+    func fetchAllData()  {
+        let container = CKContainer.default()
+        let containerType = container.publicCloudDatabase
+        let predicate = NSPredicate(value: true)
+        let query = CKQuery(recordType: "Class", predicate: predicate)
+        
+        containerType.perform(query, inZoneWith: nil) { (record, error) in
+            
+            for record: CKRecord in record! {
+                //...
+                
+                // if you want to access a certain 'field'.
+                //                let name = record.value(forKeyPath: "Name") as! String
+                //                let name = record.value(forKey: "code") as! String
+                let title = record.value(forKey: "title") as! String
+                let code = record.value(forKey: "code") as! String
+                let shift = record.value(forKey: "shift") as! Date
+                let period = record.value(forKey: "period") as! String
+                let days = record.value(forKey: "days") as! String
+                
+                let course = Course(title: title, code: code, shift: shift, period: period, day: days)
+                arrayAllClass2.append(course)
+            }
+            print("===============================================>\(arrayAllClass2)")
+        }
     }
     
     

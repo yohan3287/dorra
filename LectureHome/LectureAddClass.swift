@@ -146,9 +146,11 @@ class LectureAddClass: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         shift = shiftTextField1.text ?? ""
         //repeats = repeatPicker.
         
-        
-        
-        CloudKitHelper().createClass(title: title, code: code, shift: shift, period: period, days: "Test")
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+        let shift2 = dateFormatter.date(from: shift)!
+    
+        CloudKitHelper().createClass(title: title, code: code, shift: shift2, period: period, days: "test")
         
         print("work")
     }

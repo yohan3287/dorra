@@ -48,6 +48,7 @@ class SigninVC: UIViewController {
                     self.present(alert, animated: true, completion: nil)
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         alert.dismiss(animated: true) {
+                            CloudKitHelper().fetchAllData()
                             self.performSegue(withIdentifier: "toStudentHome", sender: nil)
                         }
                     }
@@ -74,7 +75,8 @@ class SigninVC: UIViewController {
                     status = true
                     let alert = UIAlertController(title: "alert message", message: "login success", preferredStyle: .alert)
                     self.present(alert, animated: true, completion: nil)
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    CloudKitHelper().fetchAllData()
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                         alert.dismiss(animated: true) {
                             self.performSegue(withIdentifier: "toLecturerHome", sender: nil)
                         }

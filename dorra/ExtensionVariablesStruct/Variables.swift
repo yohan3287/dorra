@@ -11,6 +11,11 @@ import Foundation
 import CloudKit
 import UIKit
 
+//Date
+let currentDate = Date()
+let dateFormatter = DateFormatter()
+var dateComponent = DateComponents()
+
 var titles = [String]()
 var recordIDs = [CKRecord.ID]()
 
@@ -39,12 +44,12 @@ struct Matkul {
 }
 
 struct Course {
-    var title: String!
-    var code: String!
-    var shift: String!
-    var period: String!
-//    var remindMe: Date!
-    var day: String!
+    var title: String
+    var code: String
+    var shift: Date
+    var period: String
+//    var remindMe: Date
+    var day: String
 }
 
 var array = [Question]()

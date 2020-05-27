@@ -19,9 +19,9 @@ class lectureHome: UIViewController {
       
         switch section {
             case 1:
-                return arrayToday.count
+                return arrayToday2.count
             case 2:
-                return arrayTomorrow.count
+                return arrayTomorrow2.count
             case 0:
                 return 1
             default:
@@ -36,31 +36,39 @@ class lectureHome: UIViewController {
             
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: getIdentifier2(forSection: indexPath.section), for: indexPath) as? LectureTodayTVCell {
-                      if arrayToday.count != 0 {
-                          let course = arrayToday[indexPath.row]
-                          cell.classLabel.text = course.kelas
-                          cell.timeLabel.text = course.time
-                          return cell
-                      } else {
-                          return UITableViewCell()
-                      }
-                  } else {
-                      return LectureTodayTVCell()
-                  }
+                if arrayToday2.count != 0 {
+                    let course = arrayToday2[indexPath.row]
+                    cell.classLabel.text = course.title
+                    let formatter = DateFormatter()
+                    formatter.dateFormat = "HH:mm"
+                    let formattedShift = formatter.string(from: course.shift)
+                    print("=======================> \(formattedShift)")
+                    cell.timeLabel.text = formattedShift
+                    return cell
+                } else {
+                    return UITableViewCell()
+                }
+            } else {
+                return LectureTodayTVCell()
+            }
             
         case 2:
             if let cell = tableView.dequeueReusableCell(withIdentifier: getIdentifier2(forSection: indexPath.section), for: indexPath) as? LectureTomorrowTVCell {
-                         if arrayTomorrow.count != 0 {
-                             let course = arrayTomorrow[indexPath.row]
-                             cell.classLabel.text = course.kelas
-                             cell.timeLabel.text = course.time
-                             return cell
-                         } else {
-                             return UITableViewCell()
-                         }
-                     } else {
-                         return LectureTomorrowTVCell()
-                     }
+                if arrayTomorrow2.count != 0 {
+                    let course = arrayTomorrow2[indexPath.row]
+                    cell.classLabel.text = course.title
+                    let formatter = DateFormatter()
+                    formatter.dateFormat = "HH:mm"
+                    let formattedShift = formatter.string(from: course.shift)
+                    print("=======================> \(formattedShift)")
+                    cell.timeLabel.text = formattedShift
+                    return cell
+                } else {
+                    return UITableViewCell()
+                }
+            } else {
+                return LectureTomorrowTVCell()
+            }
             case 0:
             if let cell = tableView.dequeueReusableCell(withIdentifier: getIdentifier2(forSection: indexPath.section), for: indexPath) as? LectureAllClassTVCell {
                       return cell
@@ -103,7 +111,7 @@ class lectureHome: UIViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.section {
            case 1:
-               for index in 0...arrayToday.count {
+               for index in 0...arrayToday2.count {
                    if indexPath.row == index {
                        print("today \(index)")
                        performSegue(withIdentifier: "toDetailClass", sender: nil)
@@ -111,7 +119,7 @@ class lectureHome: UIViewController {
                    }
                }
            case 2:
-               for index in 0...arrayTomorrow.count {
+               for index in 0...arrayTomorrow2.count {
                    if indexPath.row == index {
                        print("tomorrow\(index)")
                        performSegue(withIdentifier: "toDetailClass", sender: nil)
@@ -168,26 +176,31 @@ class lectureHome: UIViewController {
         self.profilePhoto.layer.cornerRadius = self.profilePhoto.frame.size.width / 2
         self.profilePhoto.clipsToBounds = true
         
-        // MARK: Dummy Data
-        arrayAllClass.append(Matkul(time: "1", kelas: "kelas", day: "hari", type: 1))
-            arrayAllClass.append(Matkul(time: "2", kelas: "kelas2", day: "hari2", type: 2))
-            arrayAllClass.append(Matkul(time: "3", kelas: "kelas3", day: "hari3", type: 1))
-            arrayAllClass.append(Matkul(time: "2", kelas: "kelas4", day: "hari2", type: 2))
-            arrayAllClass.append(Matkul(time: "2", kelas: "kelas5", day: "hari2", type: 2))
-            arrayAllClass.append(Matkul(time: "2", kelas: "kelas6", day: "hari2", type: 2))
+        // MARK: data load
+         dateFormatter.dateFormat = "YYYY-MM-dd"
+            let currentDateString = dateFormatter.string(from: currentDate)
             
-            for index in 0...arrayAllClass.count-1{
-                if arrayAllClass[index].type == 1 {
-                    arrayToday.append(arrayAllClass[index])
-                }
-            }
-            
-            for index in 0...arrayAllClass.count-1{
-                if arrayAllClass[index].type == 2 {
-                    arrayTomorrow.append(arrayAllClass[index])
-                }
-            }
+            dateComponent.day = 1
+            let tomorrowDate = Calendar.current.date(byAdding: dateComponent, to: currentDate)
+            let tomorrowDateString = dateFormatter.string(from: tomorrowDate!)
         
+            for index in 0...arrayAllClass2.count-1 {
+                let classDateString = dateFormatter.string(from: arrayAllClass2[index].shift)
+                if classDateString == currentDateString {
+                    arrayToday2.append(arrayAllClass2[index])
+                } else {
+                    print("Today failllllllllllllll")
+                }
+            }
+            
+            for index in 0...arrayAllClass2.count-1{
+                let classDateString = dateFormatter.string(from: arrayAllClass2[index].shift)
+                if classDateString == tomorrowDateString {
+                    arrayTomorrow2.append(arrayAllClass2[index])
+                } else {
+                    print("tomorrow Fail")
+                }
+            }
         
         // END MARK
         

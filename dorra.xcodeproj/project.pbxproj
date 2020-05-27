@@ -85,15 +85,15 @@
 		AE0247E4247C323F00DB419A /* LectureAllClassCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LectureAllClassCVCell.swift; path = dorra/LectureHome/LectureAllClassCVCell.swift; sourceTree = SOURCE_ROOT; };
 		AE0247E5247C323F00DB419A /* LectureTomorrowTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LectureTomorrowTVCell.swift; path = dorra/LectureHome/LectureTomorrowTVCell.swift; sourceTree = SOURCE_ROOT; };
 		AE0247EC247C32F200DB419A /* ResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultCell.swift; path = dorra/ResultCell.swift; sourceTree = "<group>"; };
-		AE0247EE247C335D00DB419A /* LectureCreateDetailClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LectureCreateDetailClass.swift; path = dorra/LectureCreateDetailClass.swift; sourceTree = "<group>"; };
+		AE0247EE247C335D00DB419A /* LectureCreateDetailClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectureCreateDetailClass.swift; sourceTree = "<group>"; };
 		AE0247F0247C337200DB419A /* Quises.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Quises.plist; path = dorra/Quises.plist; sourceTree = "<group>"; };
 		AE0247F2247C339C00DB419A /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCell.swift; path = dorra/MyCell.swift; sourceTree = "<group>"; };
 		AE0247F4247C33AB00DB419A /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyCell.xib; path = dorra/MyCell.xib; sourceTree = "<group>"; };
 		AE0247F8247C345900DB419A /* resultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = resultVC.swift; path = dorra/resultVC.swift; sourceTree = "<group>"; };
 		AE0247FA247C347A00DB419A /* resultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = resultTableViewController.swift; path = dorra/resultTableViewController.swift; sourceTree = "<group>"; };
-		AE0247FC247C34A300DB419A /* LectureDetailClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LectureDetailClass.swift; path = dorra/LectureDetailClass.swift; sourceTree = "<group>"; };
-		AE0247FE247C34BF00DB419A /* lectureHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = lectureHome.swift; path = dorra/lectureHome.swift; sourceTree = "<group>"; };
-		AE024800247C34CE00DB419A /* LectureAddClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LectureAddClass.swift; path = dorra/LectureAddClass.swift; sourceTree = "<group>"; };
+		AE0247FC247C34A300DB419A /* LectureDetailClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectureDetailClass.swift; sourceTree = "<group>"; };
+		AE0247FE247C34BF00DB419A /* lectureHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lectureHome.swift; sourceTree = "<group>"; };
+		AE024800247C34CE00DB419A /* LectureAddClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectureAddClass.swift; sourceTree = "<group>"; };
 		AE024802247C34E100DB419A /* LecturerHistory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LecturerHistory.storyboard; path = dorra/LecturerHistory.storyboard; sourceTree = "<group>"; };
 		AE024804247C350300DB419A /* questionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = questionTableViewController.swift; path = dorra/questionTableViewController.swift; sourceTree = "<group>"; };
 		AE024806247C352300DB419A /* questionListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = questionListVC.swift; path = dorra/questionListVC.swift; sourceTree = "<group>"; };
@@ -165,15 +165,12 @@
 		AECD3D7524727E8800B8616D = {
 			isa = PBXGroup;
 			children = (
+				C8F18A12247E7D8500A24331 /* Adel */,
 				AE02481B247C38D400DB419A /* StudentHome */,
-				AE0247FC247C34A300DB419A /* LectureDetailClass.swift */,
 				C8C33CD3247A6C5700EFA561 /* LectureHome */,
-				AE0247FE247C34BF00DB419A /* lectureHome.swift */,
 				AE02482C247C3F2000DB419A /* StudentMaterial.storyboard */,
-				AE024800247C34CE00DB419A /* LectureAddClass.swift */,
 				AE024802247C34E100DB419A /* LecturerHistory.storyboard */,
 				AE1AF85A2475192C0092AA5B /* LecturerProfile.storyboard */,
-				AE0247EE247C335D00DB419A /* LectureCreateDetailClass.swift */,
 				AE0247F4247C33AB00DB419A /* MyCell.xib */,
 				AE0247F0247C337200DB419A /* Quises.plist */,
 				AE0247F2247C339C00DB419A /* MyCell.swift */,
@@ -236,12 +233,23 @@
 		C8C33CD3247A6C5700EFA561 /* LectureHome */ = {
 			isa = PBXGroup;
 			children = (
+				AE0247FC247C34A300DB419A /* LectureDetailClass.swift */,
+				AE0247FE247C34BF00DB419A /* lectureHome.swift */,
+				AE024800247C34CE00DB419A /* LectureAddClass.swift */,
 				AE0247E4247C323F00DB419A /* LectureAllClassCVCell.swift */,
 				AE0247E2247C323F00DB419A /* LectureAllClassTVCell.swift */,
 				AE0247E3247C323F00DB419A /* LectureTodayTVCell.swift */,
 				AE0247E5247C323F00DB419A /* LectureTomorrowTVCell.swift */,
+				AE0247EE247C335D00DB419A /* LectureCreateDetailClass.swift */,
 			);
 			path = LectureHome;
+			sourceTree = "<group>";
+		};
+		C8F18A12247E7D8500A24331 /* Adel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Adel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

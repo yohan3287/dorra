@@ -205,6 +205,11 @@ class lectureHome: UIViewController {
         performSegue(withIdentifier: "toAddClass", sender: nil)
     }
     
+    @IBAction func toHistory(_ sender: UIButton) {
+        performSegue(withIdentifier: "toHistory", sender: nil)
+    }
+    
+    
 }
 
 //extension UIColor {

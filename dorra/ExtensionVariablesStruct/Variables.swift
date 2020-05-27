@@ -11,6 +11,11 @@ import Foundation
 import CloudKit
 import UIKit
 
+//Date
+let currentDate = Date()
+let dateFormatter = DateFormatter()
+var dateComponent = DateComponents()
+
 var titles = [String]()
 var recordIDs = [CKRecord.ID]()
 

@@ -27,40 +27,23 @@ class StudentHomeVC: UIViewController {
         }
 
         // Do any additional setup after loading the view.
-
-        
         homeTableView.dataSource = self
         homeTableView.delegate = self
-                
+        
+        // Rounded PhotoProfile
         self.profilePhoto.layer.masksToBounds = false
         self.profilePhoto.layer.cornerRadius = self.profilePhoto.frame.size.width / 2
         self.profilePhoto.clipsToBounds = true
         
-        
-        arrayAllClass.append(Matkul(time: "1", kelas: "kelas", day: "hari", type: 1))
-        arrayAllClass.append(Matkul(time: "2", kelas: "kelas2", day: "hari2", type: 2))
-        
-        let currentDate = Date()
-        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YYYY-MM-dd"
         let currentDateString = dateFormatter.string(from: currentDate)
-//        FunctionHelper().isDateInToday(currentDate)
         
-        
-        print ("\(currentDate) ======== \(arrayAllClass2[0].shift)")
-                
-        
-        var dateComponent = DateComponents()
         dateComponent.day = 1
         let tomorrowDate = Calendar.current.date(byAdding: dateComponent, to: currentDate)
         let tomorrowDateString = dateFormatter.string(from: tomorrowDate!)
-        print(tomorrowDateString)
-        
     
         for index in 0...arrayAllClass2.count-1 {
-            
             let classDateString = dateFormatter.string(from: arrayAllClass2[index].shift)
-            
             if classDateString == currentDateString {
                 arrayToday2.append(arrayAllClass2[index])
             } else {
@@ -68,22 +51,15 @@ class StudentHomeVC: UIViewController {
             }
         }
         
-        for index in 0...arrayAllClass.count-1{
-            
-            let DateFormat = DateFormatter()
-            DateFormat.dateFormat = "YYYY-MM-dd"
+        for index in 0...arrayAllClass2.count-1{
             let classDateString = dateFormatter.string(from: arrayAllClass2[index].shift)
-            
             if classDateString == tomorrowDateString {
                 arrayTomorrow2.append(arrayAllClass2[index])
             } else {
                 print("tomorrow Fail")
             }
-            
         }
         
-        print("arrayallclass=======================> \(arrayAllClass2)")
-        print("arraytoday=======================> \(arrayToday2)")
     }
   
     
@@ -154,13 +130,11 @@ extension UIViewController: UITableViewDataSource, UITableViewDelegate {
                 if arrayToday2.count != 0 {
                     let course = arrayToday2[indexPath.row]
                     cell.classLabel.text = course.title
-                    
-                    let format = DateFormatter()
-                    format.dateFormat = "HH:mm"
-                    let formattedShift = format.string(from: course.shift)
+                    let formatter = DateFormatter()
+                    formatter.dateFormat = "HH:mm"
+                    let formattedShift = formatter.string(from: course.shift)
                     print("=======================> \(formattedShift)")
                     cell.timeLabel.text = formattedShift
-
                     return cell
                 } else {
                     return UITableViewCell()
@@ -173,12 +147,10 @@ extension UIViewController: UITableViewDataSource, UITableViewDelegate {
                 if arrayTomorrow2.count != 0 {
                     let course = arrayTomorrow2[indexPath.row]
                     cell.classLabel.text = course.title
-                    
-                    let format = DateFormatter()
-                    format.dateFormat = "HH:mm"
-                    let formattedShift = format.string(from: course.shift)
+                    let formatter = DateFormatter()
+                    formatter.dateFormat = "HH:mm"
+                    let formattedShift = formatter.string(from: course.shift)
                     print("=======================> \(formattedShift)")
-                    
                     cell.timeLabel.text = formattedShift
                     return cell
                 } else {

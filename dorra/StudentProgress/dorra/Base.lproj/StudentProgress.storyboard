@@ -180,16 +180,26 @@
                         <outlet property="score3" destination="BjS-G0-Q0L" id="7Xc-Am-VKR"/>
                         <outlet property="score3Detail" destination="D1g-CT-ZTz" id="xXz-pI-a9e"/>
                         <outlet property="tableViewDetail" destination="wJ9-dU-4gn" id="LyF-8i-7VY"/>
+                        <segue destination="wqg-uu-A7g" kind="show" identifier="toStudentMaterialComp" id="2vs-WD-OQk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rx3-CD-7sq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2126.0869565217395" y="934.82142857142856"/>
         </scene>
+        <!--StudentMaterial-->
+        <scene sceneID="xSl-sb-M8U">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StudentMaterial" id="wqg-uu-A7g" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dVi-N7-Ffn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kEQ-CJ-cv6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3008" y="935"/>
+        </scene>
         <!--Progress-->
         <scene sceneID="YnG-z0-Qck">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8WJ-A0-YeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WpJ-qS-ZC0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Progress" id="ft6-FX-6Bj"/>
                     <toolbarItems/>
@@ -202,6 +212,7 @@
                         <segue destination="KRb-6C-Huf" kind="relationship" relationship="rootViewController" id="Sgj-XE-34m"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8WJ-A0-YeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="179.71014492753625" y="935.49107142857133"/>
         </scene>

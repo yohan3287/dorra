@@ -10,4 +10,7 @@ import Foundation
 
 struct activityLists {
   var aStatus : String
+    var aPost : String
 }
+
+

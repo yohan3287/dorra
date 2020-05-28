@@ -13,20 +13,22 @@ class ActivityVC: UIViewController {
     @IBOutlet weak var activityTableView: UITableView!
     
     let aList : [activityLists] = [
-        activityLists.init(aStatus: "Mr. Jeffrey added a new stage in Math Map"),
-        activityLists.init(aStatus: "You have completed Math Journey")
-    
+        activityLists.init(aStatus: "Mr. Jeffrey added a new stage in Math Map", aPost: "2"),
+        activityLists.init(aStatus: "You have completed Math Stage", aPost: "1")
+   
     ]
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        activityTableView.register(UINib(nibName: "ActivityTableCell", bundle: nil), forCellReuseIdentifier: "ActivityTableViewCellID")
-    
+        activityTableView.register(UINib(nibName: "ActivityTableViewCell", bundle: nil), forCellReuseIdentifier: "ActivityTableCellID")
+        
+// tableViewDetail.register(UINib.init(nibName: "progressDetailTable", bundle: nil), forCellReuseIdentifier: "progressDetailCell")
     }
+       
     override  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-          return 65
+          return 70
       }
       
       override func numberOfSections(in tableView: UITableView) -> Int {
@@ -39,9 +41,10 @@ class ActivityVC: UIViewController {
       
       override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
           let cell = (tableView.dequeueReusableCell(withIdentifier: "ActivityTableCellID", for: indexPath) as? ActivityTableViewCell)!
-
         cell.activityLabel?.text = aList[indexPath.row].aStatus
-
+        cell.activityPost?.image = UIImage(named: "\(aList[indexPath.row].aPost)")
+        
+//        cell.namaVar.image = UIImage(named: )
 //        return cell()
           return ActivityTableViewCell()
       }

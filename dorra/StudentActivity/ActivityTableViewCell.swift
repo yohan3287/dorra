@@ -11,6 +11,8 @@ import UIKit
 class ActivityTableViewCell: UITableViewCell {
 
     @IBOutlet weak var activityLabel: UILabel!
+    @IBOutlet weak var activityPost: UIImageView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

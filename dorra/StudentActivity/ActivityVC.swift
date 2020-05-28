@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ActivityVC: UIViewController {
+class ActivityVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var activityTableView: UITableView!
     

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class progressDetailVC: UIViewController {
+class progressDetailVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var percentageDetail: UILabel!
     
@@ -52,19 +52,19 @@ class progressDetailVC: UIViewController {
 
         
     }
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pList.count
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "progressDetailCell", for: indexPath) as? progressDetailTable {
             cell.cDetName?.text = pList[indexPath.row].cDetName
             cell.cDetStatus?.text = pList[indexPath.row].cDetStatus

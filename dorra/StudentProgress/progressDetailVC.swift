@@ -77,7 +77,7 @@ class progressDetailVC: UIViewController, UITableViewDataSource, UITableViewDele
         return progressDetailTable()
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "toStudentMaterialComp", sender: self)
     }
 }

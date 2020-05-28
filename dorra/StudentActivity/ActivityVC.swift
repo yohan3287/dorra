@@ -27,27 +27,27 @@ class ActivityVC: UIViewController {
 // tableViewDetail.register(UINib.init(nibName: "progressDetailTable", bundle: nil), forCellReuseIdentifier: "progressDetailCell")
     }
        
-    override  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-          return 70
-      }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
       
-      override func numberOfSections(in tableView: UITableView) -> Int {
-          return 1
-      }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
       
-      override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-          return aList.count
-      }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return aList.count
+    }
       
-      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-          let cell = (tableView.dequeueReusableCell(withIdentifier: "ActivityTableCellID", for: indexPath) as? ActivityTableViewCell)!
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = (tableView.dequeueReusableCell(withIdentifier: "ActivityTableCellID", for: indexPath) as? ActivityTableViewCell)!
         cell.activityLabel?.text = aList[indexPath.row].aStatus
         cell.activityPost?.image = UIImage(named: "\(aList[indexPath.row].aPost)")
         
 //        cell.namaVar.image = UIImage(named: )
 //        return cell()
-          return ActivityTableViewCell()
-      }
+        return ActivityTableViewCell()
+    }
 
    
 

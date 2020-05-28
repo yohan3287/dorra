@@ -84,7 +84,7 @@ class LecturerHistoryVC: UIViewController, UICollectionViewDelegate, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        performSegue(withIdentifier: "toDetailHistory", sender: nil)
     }
     
     @IBAction func termTextFieldEditingDidEnd(_ sender: UITextField) {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class materialVC: UIViewController {
+class materialVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
    
 
     
@@ -26,12 +26,12 @@ class materialVC: UIViewController {
     }
     
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
             // #warning Incomplete implementation, return the number of sections
             return 1
         }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return materials.count
             
         }
@@ -49,7 +49,7 @@ class materialVC: UIViewController {
 //       }
 //
       
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //        switch indexPath.section {
         //        case 0:
         let cell = tableView.dequeueReusableCell(withIdentifier: "materialCellID", for: indexPath) as? materialCell

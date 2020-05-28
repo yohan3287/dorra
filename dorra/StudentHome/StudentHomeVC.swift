@@ -81,7 +81,7 @@ class StudentHomeVC: UIViewController {
     
 }
 
-extension UIViewController: UITableViewDataSource, UITableViewDelegate {
+extension StudentHomeVC: UITableViewDataSource, UITableViewDelegate {
     public func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }

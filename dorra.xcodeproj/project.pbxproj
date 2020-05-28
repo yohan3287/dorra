@@ -26,6 +26,10 @@
 		887C797D247EA9F000BA014E /* progressDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887C797C247EA9F000BA014E /* progressDetailVC.swift */; };
 		887C7980247EAC5600BA014E /* progressDetailTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887C797E247EAC5600BA014E /* progressDetailTable.swift */; };
 		887C7981247EAC5600BA014E /* progressDetailTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 887C797F247EAC5600BA014E /* progressDetailTable.xib */; };
+		887C7998247FA7D800BA014E /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887C7996247FA7D800BA014E /* ActivityTableViewCell.swift */; };
+		887C7999247FA7D800BA014E /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 887C7997247FA7D800BA014E /* ActivityTableViewCell.xib */; };
+		887C799B247FA86000BA014E /* ActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887C799A247FA86000BA014E /* ActivityVC.swift */; };
+		887C799D247FA98700BA014E /* ActivityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887C799C247FA98700BA014E /* ActivityList.swift */; };
 		AE0247E6247C323F00DB419A /* LectureAllClassTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0247E2247C323F00DB419A /* LectureAllClassTVCell.swift */; };
 		AE0247E7247C323F00DB419A /* LectureTodayTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0247E3247C323F00DB419A /* LectureTodayTVCell.swift */; };
 		AE0247E8247C323F00DB419A /* LectureAllClassCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0247E4247C323F00DB419A /* LectureAllClassCVCell.swift */; };
@@ -92,6 +96,10 @@
 		887C797C247EA9F000BA014E /* progressDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progressDetailVC.swift; sourceTree = "<group>"; };
 		887C797E247EAC5600BA014E /* progressDetailTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progressDetailTable.swift; sourceTree = "<group>"; };
 		887C797F247EAC5600BA014E /* progressDetailTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = progressDetailTable.xib; sourceTree = "<group>"; };
+		887C7996247FA7D800BA014E /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		887C7997247FA7D800BA014E /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
+		887C799A247FA86000BA014E /* ActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityVC.swift; sourceTree = "<group>"; };
+		887C799C247FA98700BA014E /* ActivityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityList.swift; sourceTree = "<group>"; };
 		AE0247E2247C323F00DB419A /* LectureAllClassTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LectureAllClassTVCell.swift; path = dorra/LectureHome/LectureAllClassTVCell.swift; sourceTree = SOURCE_ROOT; };
 		AE0247E3247C323F00DB419A /* LectureTodayTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LectureTodayTVCell.swift; path = dorra/LectureHome/LectureTodayTVCell.swift; sourceTree = SOURCE_ROOT; };
 		AE0247E4247C323F00DB419A /* LectureAllClassCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LectureAllClassCVCell.swift; path = dorra/LectureHome/LectureAllClassCVCell.swift; sourceTree = SOURCE_ROOT; };
@@ -177,6 +185,18 @@
 			path = StudentMaterial;
 			sourceTree = "<group>";
 		};
+		887C7995247FA78B00BA014E /* StudentActivity */ = {
+			isa = PBXGroup;
+			children = (
+				5AD398232472B3170030B5A1 /* StudentActivity.storyboard */,
+				887C7996247FA7D800BA014E /* ActivityTableViewCell.swift */,
+				887C7997247FA7D800BA014E /* ActivityTableViewCell.xib */,
+				887C799A247FA86000BA014E /* ActivityVC.swift */,
+				887C799C247FA98700BA014E /* ActivityList.swift */,
+			);
+			path = StudentActivity;
+			sourceTree = "<group>";
+		};
 		AE02481B247C38D400DB419A /* StudentHome */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +232,7 @@
 		AECD3D8024727E8800B8616D /* dorra */ = {
 			isa = PBXGroup;
 			children = (
+				887C7995247FA78B00BA014E /* StudentActivity */,
 				887C7983247EDF7C00BA014E /* StudentMaterial */,
 				887C7982247EDF4C00BA014E /* StudentQuiz */,
 				C8F18A12247E7D8500A24331 /* StudentProgress */,
@@ -276,7 +297,6 @@
 				887C7977247E97A400BA014E /* ProgressTableViewCell.xib */,
 				887C7974247E970E00BA014E /* progressVC.swift */,
 				887C797A247EA0C800BA014E /* ProgressList.swift */,
-				5AD398232472B3170030B5A1 /* StudentActivity.storyboard */,
 			);
 			path = StudentProgress;
 			sourceTree = "<group>";
@@ -372,6 +392,7 @@
 				887C7979247E97A400BA014E /* ProgressTableViewCell.xib in Resources */,
 				5AD398252472B3170030B5A1 /* StudentActivity.storyboard in Resources */,
 				887C7981247EAC5600BA014E /* progressDetailTable.xib in Resources */,
+				887C7999247FA7D800BA014E /* ActivityTableViewCell.xib in Resources */,
 				AE02481A247C383F00DB419A /* Main.storyboard in Resources */,
 				5AD3982A2472B3580030B5A1 /* StudentProgress.storyboard in Resources */,
 				AE38C831247EE449002200DA /* StudentQuiz.storyboard in Resources */,
@@ -392,6 +413,7 @@
 				AE024826247C38E900DB419A /* AllClassTVCell.swift in Sources */,
 				887C797D247EA9F000BA014E /* progressDetailVC.swift in Sources */,
 				887C7975247E970E00BA014E /* progressVC.swift in Sources */,
+				887C799B247FA86000BA014E /* ActivityVC.swift in Sources */,
 				AE5651C72477C7E700CEB65D /* HistoryCollectionViewCell.swift in Sources */,
 				AECD3D8624727E8800B8616D /* SigninVC.swift in Sources */,
 				AE02482A247C38E900DB419A /* TodayTVCell.swift in Sources */,
@@ -425,6 +447,8 @@
 				5A50DA74247315720010C842 /* Variables.swift in Sources */,
 				AE0247FD247C34A300DB419A /* LectureDetailClass.swift in Sources */,
 				AE0247EF247C335D00DB419A /* LectureCreateDetailClass.swift in Sources */,
+				887C7998247FA7D800BA014E /* ActivityTableViewCell.swift in Sources */,
+				887C799D247FA98700BA014E /* ActivityList.swift in Sources */,
 				AE0247E8247C323F00DB419A /* LectureAllClassCVCell.swift in Sources */,
 				5AFCEEF8247309CC0038518C /* Students+Extension.swift in Sources */,
 				5AFCEF0024730E220038518C /* UIViewController+Extension.swift in Sources */,

@@ -172,6 +172,8 @@ class lectureHome: UIViewController, UITableViewDataSource, UITableViewDelegate 
         self.homeTableView.dataSource = self
         self.homeTableView.delegate = self
         
+        hiLabel.text = "Hi, \(currentName)"
+        
         self.profilePhoto.layer.masksToBounds = false
         self.profilePhoto.layer.cornerRadius = self.profilePhoto.frame.size.width / 2
         self.profilePhoto.clipsToBounds = true
@@ -184,6 +186,7 @@ class lectureHome: UIViewController, UITableViewDataSource, UITableViewDelegate 
             let tomorrowDate = Calendar.current.date(byAdding: dateComponent, to: currentDate)
             let tomorrowDateString = dateFormatter.string(from: tomorrowDate!)
         
+        if status2 == false{
             for index in 0...arrayAllClass2.count-1 {
                 let classDateString = dateFormatter.string(from: arrayAllClass2[index].shift)
                 if classDateString == currentDateString {
@@ -201,6 +204,8 @@ class lectureHome: UIViewController, UITableViewDataSource, UITableViewDelegate 
                     print("tomorrow Fail")
                 }
             }
+            status2 = true
+    }
         
         // END MARK
         

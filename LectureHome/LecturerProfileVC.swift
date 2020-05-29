@@ -34,7 +34,10 @@ class LecturerProfileVC: UIViewController {
     }
     
     @IBAction func signOutButton(_ sender: Any) {
-        performSegue(withIdentifier: "toLogin", sender: nil)
+        status2 = true
+        
+        //performSegue(withIdentifier: "toLogin", sender: nil)
+        self.view.window?.rootViewController?.dismiss(animated:true, completion: nil)
     }
     
     /*

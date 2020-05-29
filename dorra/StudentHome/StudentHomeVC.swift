@@ -30,6 +30,8 @@ class StudentHomeVC: UIViewController {
         homeTableView.dataSource = self
         homeTableView.delegate = self
         
+        hiLabel.text = "Hi, \(currentName)"
+        
         // Rounded PhotoProfile
         self.profilePhoto.layer.masksToBounds = false
         self.profilePhoto.layer.cornerRadius = self.profilePhoto.frame.size.width / 2
@@ -42,7 +44,7 @@ class StudentHomeVC: UIViewController {
         let tomorrowDate = Calendar.current.date(byAdding: dateComponent, to: currentDate)
         let tomorrowDateString = dateFormatter.string(from: tomorrowDate!)
     
-        if status == false {
+        if status2 == false {
             for index in 0...arrayAllClass2.count-1 {
                 let classDateString = dateFormatter.string(from: arrayAllClass2[index].shift)
                 if classDateString == currentDateString {
@@ -60,7 +62,7 @@ class StudentHomeVC: UIViewController {
                     print("tomorrow Fail")
                 }
             }
-            status = true
+            status2 = true
         }
     }
   

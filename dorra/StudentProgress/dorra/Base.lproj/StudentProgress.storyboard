@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WpJ-qS-ZC0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WpJ-qS-ZC0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ProgressVC-->
+        <!--Progress-->
         <scene sceneID="gG4-pE-Bum">
             <objects>
                 <viewController definesPresentationContext="YES" modalPresentationStyle="fullScreen" id="KRb-6C-Huf" customClass="progressVC" customModule="dorra" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,6 +59,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="qd0-Ds-rFG"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Progress" image="progress" selectedImage="progress" id="91m-e3-3xn"/>
                     <navigationItem key="navigationItem" id="4mg-iC-NVH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -217,4 +218,7 @@
             <point key="canvasLocation" x="179.71014492753625" y="935.49107142857133"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="progress" width="23" height="22"/>
+    </resources>
 </document>

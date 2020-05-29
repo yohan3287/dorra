@@ -18,7 +18,7 @@ class doneVC: UIViewController {
     
 
     @IBAction func doneButton(_ sender: Any) {
-        status = true
+        status2 = true
         performSegue(withIdentifier: "toStudentHome", sender: nil)
     }
     

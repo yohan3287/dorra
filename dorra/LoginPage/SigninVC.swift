@@ -21,16 +21,17 @@ class SigninVC: UIViewController {
         lecturerAccount = Lecture.fetchAll(viewContext: getViewContext())
         
         let emailImageView = UIImageView()
-        let emailIcon = UIImage(named: "icon")
+        let emailIcon = UIImage(named: "mail")
         emailImageView.image = emailIcon
         emailTextField.leftView = emailImageView
         emailTextField.leftViewMode = .always
         
         let passwordImageView = UIImageView()
-        let passwordIcon = UIImage(named: "icon")
+        let passwordIcon = UIImage(named: "lock")
         passwordImageView.image = passwordIcon
         passwordTextField.leftView = passwordImageView
         passwordTextField.leftViewMode = .always
+      
     }
     
     func assignCurrentAccount(name: String!, title: String!, univ: String!, phone: String!, email: String!) {
@@ -54,7 +55,9 @@ class SigninVC: UIViewController {
                     status = true
                     let alert = UIAlertController(title: "alert message", message: "login success", preferredStyle: .alert)
                     self.present(alert, animated: true, completion: nil)
+                    if status2 == false{
                     CloudKitHelper().fetchAllData()
+                    }
                     assignCurrentAccount(name: user.studentName, title: "Computer Science", univ: user.studentUniversity, phone: user.studentPhone, email: user.studentEmail)
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         alert.dismiss(animated: true) {
@@ -84,7 +87,9 @@ class SigninVC: UIViewController {
                     status = true
                     let alert = UIAlertController(title: "alert message", message: "login success", preferredStyle: .alert)
                     self.present(alert, animated: true, completion: nil)
-                    CloudKitHelper().fetchAllData()
+                    if status2 == false{
+                        CloudKitHelper().fetchAllData()
+                    }
                     assignCurrentAccount(name: user.lectureName, title: "Computer Science", univ: user.lectureUniversity, phone: user.lecturePhone, email: user.lectureEmail)
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                         alert.dismiss(animated: true) {

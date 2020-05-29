@@ -64,7 +64,7 @@ class MapJourneyVC: UIViewController {
     }
     
     @IBAction func stage2Button(_ sender: Any) {
-        if star1.isHidden == true { //ganti date nanti
+        if star1.isHidden == false { //ganti date nanti
             let alert = UIAlertController(title: "Not Ready Yet", message: "This stage is start tommorow at \(readyTime), please come back tommorow", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
             self.present(alert, animated: true)

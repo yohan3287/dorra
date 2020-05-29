@@ -222,7 +222,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j8Z-ho-SGl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="JE0-3R-f1V"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Glyphcoba" selectedImage="Glyphcoba" id="JE0-3R-f1V"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="hiLabel" destination="ERc-RZ-eWo" id="QaU-J0-uRU"/>
@@ -467,6 +467,7 @@
     </scenes>
     <resources>
         <image name="3556940" width="828" height="828"/>
+        <image name="Glyphcoba" width="25" height="23"/>
         <image name="checkpoint" width="36" height="65"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="map" width="391" height="631"/>

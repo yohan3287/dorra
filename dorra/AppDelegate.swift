@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let container = NSPersistentCloudKitContainer(name: "dorra")
         
         // Create a store description for a CloudKit-backed local store
-        let cloudStoreLocation = URL(fileURLWithPath: "/Users/yohanwongso/Documents/cloud.store")
+        let cloudStoreLocation = URL(fileURLWithPath: "/Users/-----> YOUR MAC NAME HERE <-----/Documents/cloud.store") // INPUT MAC NAME DIRECTORY
         let cloudStoreDescription =
             NSPersistentStoreDescription(url: cloudStoreLocation)
         cloudStoreDescription.configuration = "Cloud"
@@ -73,6 +73,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                  Check the error message to determine what the actual problem was.
                  */
                 fatalError("Unresolved error \(error), \(error.userInfo)")
+                
+                // MARK: IF ERROR, CHANGE CLOUDSTORE LOCATION BASED ON YOUR MAC NAME (LINE 48)
+                //Thread 1: Fatal error: Unresolved error Error Domain=NSCocoaErrorDomain Code=512 "The file couldn’t be saved." UserInfo={reason=Failed to create file; code = 2}, ["reason": Failed to create file; code = 2]
             }
         })
         return container

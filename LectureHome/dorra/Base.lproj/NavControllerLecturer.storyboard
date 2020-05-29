@@ -38,8 +38,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here is list of class you need to check today " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJD-7J-FZ1">
-                                <rect key="frame" x="20" y="159" width="221" height="58"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here is list of schedule you need to check today " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJD-7J-FZ1">
+                                <rect key="frame" x="20" y="159" width="212" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -203,7 +203,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="y4a-1c-0pC"/>
                     <connections>
-                        <outlet property="hiLabel" destination="Pmr-vc-B0v" id="8Ma-r3-fOa"/>
+                        <outlet property="hiLabel" destination="Pmr-vc-B0v" id="TfR-BD-NkD"/>
                         <outlet property="homeTableView" destination="1BQ-nl-TZs" id="OHY-L3-o5i"/>
                         <outlet property="profilePhoto" destination="gG0-1K-vbF" id="2se-ml-ThJ"/>
                         <segue destination="ZRK-VH-zvn" kind="show" identifier="toProfile" id="yML-tq-Gqr"/>

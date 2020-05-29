@@ -87,7 +87,7 @@ extension UIView {
     
 }
 
-var status: Bool = false
+var status2: Bool = false
 var currentName: String = ""
 var currentTitle: String = ""
 var currentUniversity: String = ""
